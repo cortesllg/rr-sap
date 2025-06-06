@@ -14,6 +14,9 @@ const Contact = ({ isMobile }: ContactProps) => {
 
     if (!form.current) return;
 
+    // UPDATE keys with your own EmailJS service ID, template ID, and user ID
+    // Make sure to update the service ID, template ID, and user ID with your own EmailJS credentials
+    // You can find these in your EmailJS dashboard
     emailjs
       .sendForm(
         "service_ay73hxk",
