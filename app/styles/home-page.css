@@ -1,0 +1,498 @@
+/* This is the CSS file for the home page of the Robinson Rancheria SAP website */
+
+/***************************************************
+****************************************************
+
+This is the structure of the image and text overlay and goal box
+
+****************************************************
+****************************************************
+
+/* Container for the image */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+/*   font-family: "Georgia", serif;*/
+
+/* Text overlay */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: clamp(1.2rem, 4vw, 3rem); /* More flexible font size */
+  font-weight: normal;
+  padding: 10px;
+  font-family: "Georgia", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 90%; /* Prevent it from spilling out horizontally */
+  max-height: 90%; /* Prevent it from spilling out vertically */
+  overflow: hidden;
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+/* Style the h2 text */
+.overlay-text h2 {
+  font-size: clamp(1.8rem, 2.5vw, 3.5rem);
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* Style the p2 (paragraph) text */
+.overlay-text .p2 {
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: normal;
+  margin-top: 0;
+}
+
+/* Button style */
+.overlay-button {
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-family: "roboto", sans-serif;
+  border-radius: 9999px; /* Rounded corners */
+  padding: 12px 24px;
+  background-color: #a3c7c7;
+  color: white;
+  font-style: italic;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.overlay-button:hover {
+  background-color: #313f58;
+  text-decoration-color: #e2dbbe; /* Change text color on hover */
+  color: #e2dbbe; /* Change text color on hover */
+}
+
+/* Container for the goal box */
+.goal-box {
+  position: relative;
+  margin: 20px auto; /* Centers box horizontally */
+  background-color: white;
+  width: 75%; /* Default width */
+  max-width: 800px; /* Optional: Restrict max width */
+  min-height: 120px; /* Increased height for better visibility */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center inner content horizontally */
+  text-align: center; /* Center text inside */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Title of the goal box */
+.goal-title {
+  color: #377eff;
+  font-weight: bold;
+  font-size: clamp(20px, 2.5vw, 24px); /* Increased font size */
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Added for emphasis */
+  letter-spacing: 1px; /* Letter spacing for a cleaner look */
+}
+
+/* Divider line under the title */
+.goal-divider {
+  width: 50%;
+  height: 2px;
+  background-color: #aca6a6;
+  margin-bottom: 20px;
+  border-radius: 1px; /* Softened the edges */
+}
+
+/* Text content of the goal box */
+.goal-text {
+  color: #444;
+  font-size: clamp(15px, 1.8vw, 18px); /* Improved readability */
+  line-height: 1.7; /* Increased line height for better readability */
+  text-align: justify; /* Justified alignment for a balanced look */
+  margin: 0;
+  padding: 0 10px; /* Added padding to prevent text from touching the sides */
+}
+
+/* Strong emphasis inside the text */
+.goal-text strong {
+  color: #377eff;
+  font-weight: bold; /* Added bold styling for emphasis */
+}
+/* For specific images, like one that should be larger */
+.special-image {
+  max-width: 80%; /* Make this image smaller or adjust as needed */
+  max-height: 500px; /* Limit height */
+  object-fit: cover; /* Ensure it covers the container without stretching */
+}
+
+section h2 {
+  font-family: Georgia, serif; /* Georgia for section headings */
+  font-size: 2rem;
+  color: #313f58;
+}
+
+/***************************************************
+  ****************************************************
+  
+  This is the structure of the description of what is an ATP
+  
+  ****************************************************
+  ****************************************************
+  */
+
+.description {
+  position: relative;
+  margin: 40px auto; /* Add more space between goal box and description */
+  background-color: #ffffff; /* Beige background */
+  width: 80%; /* Align with the vertical line for OUR GOAL */
+  padding: 20px;
+  z-index: 1; /* Lower z-index, since we don't need overlap */
+  border-radius: 8px;
+}
+
+/* Inner content of the description */
+.description-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+/* Title of the description */
+.description-title {
+  font-family: "Roboto", sans-serif; /* Roboto for modern body text */
+  display: flex;
+  font-size: 32px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.title-text {
+  font-family: "Roboto", sans-serif; /* Roboto for modern body text */
+  font-size: 32px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #1c1c21; /* dark red or your brand color */
+  line-height: 1.2;
+}
+
+.arrow {
+  font-size: 36px;
+  color: #1c1c21;
+  user-select: none;
+}
+
+/* Box that contains the description content */
+.description-box {
+  background-color: #d6d6d6; /* Dark Blue */
+  text-align: justify;
+  color: rgb(0, 0, 0); /* White text for contrast */
+  font-weight: normal; /* Emphasized bold text */
+  font-size: clamp(15px, 1.6vw, 18px); /* Adjustable font size */
+  width: 100%;
+  max-width: 1000px; /* Prevents stretching too wide */
+  line-height: 1.6; /* Spaced lines for readability */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Updates and call-to-action sections */
+.updates,
+.call-to-action {
+  background-color: #e2dbbe; /* Beige background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Call-to-action specific styling */
+.call-to-action {
+  background-color: #444342; /* Dark background */
+  color: white; /* White text */
+  font-weight: bold; /* Emphasize call-to-action */
+}
+
+/* Call-to-action button or bullet points*/
+.steps {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.step {
+  max-width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 20px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #377eff; /* Match your design */
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+  color: #377eff;
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.text {
+  font-size: 14px;
+  color: #333;
+}
+/***************************************************
+  ****************************************************
+  
+  This is the structure of the image and dividing the 'what is an ATP'/'MISSION' statement
+  
+  ****************************************************
+  ****************************************************
+  */
+
+.full-width-image {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px; /* ✅ Add or increase this for space below */
+}
+.full-width-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/***************************************************
+  ****************************************************
+  
+  This is the structure of the mission statement
+  
+  ****************************************************
+  ****************************************************
+  */
+
+.mission-section {
+  margin: 10px auto 45px; /* Less space on top, keep nice spacing on bottom */
+  width: 60%;
+  text-align: center;
+}
+
+.mission-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.title-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #1c1c21;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.mission-section .arrow {
+  font-size: 36px;
+  color: #1c1c21;
+  user-select: none;
+}
+
+.mission-divider {
+  border: none;
+  border-top: 2px dotted #444342; /* Dotted line */
+  width: 56%;
+  margin: 0 auto 20px;
+}
+
+.mission-text {
+  text-align: justify;
+  font-size: clamp(15px, 1.5vw, 18px);
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Objectives section below the mission statement */
+
+.objectives-section {
+  font-family: "Roboto", sans-serif;
+  margin: 40px auto;
+  width: 80%;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.objectives-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #377eff;
+  margin-bottom: 20px;
+}
+
+.objective-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.objective-number {
+  background-color: #1c1c21;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.objective-heading {
+  font-weight: bold;
+  color: #1c1c21;
+  margin: 0 0 4px 0;
+}
+
+.objective-text {
+  margin: 0;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+
+/* fade in and up effect for certain objects in .tsx files*/
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0; /* so it starts invisible */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0; /* so it starts invisible */
+}
+
+/* Generic observe behavior */
+.observe {
+  opacity: 0;
+}
+
+/* Animation triggered by being observed */
+.fade-in.animate {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-up.animate {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Make buttons responsive and adjust for smaller screens */
+/* Make buttons responsive and adjust for smaller screens */
+@media (max-width: 768px), (max-height: 500px) {
+  .overlay-text1 .bg-heading {
+    font-size: 24px;
+  }
+
+  .goal-box {
+    width: 90%; /* Adjust width for mobile */
+    margin: 20px auto; /* Ensure horizontal centering */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically inside the box */
+    align-items: center; /* Center horizontally inside the box */
+    text-align: center; /* Center text inside */
+  }
+
+  .goal-title {
+    font-size: clamp(18px, 5vw, 22px); /* Responsive font size for title */
+    margin-bottom: 10px;
+  }
+
+  .goal-divider {
+    width: 50px; /* Adjust divider width for mobile */
+    height: 2px;
+    background-color: #aca6a6;
+    margin-bottom: 10px;
+  }
+
+  .goal-text {
+    font-size: clamp(15px, 1.5vw, 16px); /* Responsive font size for text */
+    max-width: 100%; /* Ensure text fits inside */
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .description {
+    width: 90%;
+    margin: 20px auto;
+    left: auto;
+    transform: none;
+  }
+
+  .mission-section {
+    width: 75%;
+    margin: 20px auto;
+  }
+
+  .mission-title {
+    font-size: 30px;
+  }
+}
+
+/* Style the image itself */
+.header-image {
+  width: 100%; /* Ensure the image spans the full width of the container */
+  height: 100%; /* Ensure the image spans the full height of the container */
+  object-fit: cover; /* Cover the container while maintaining the aspect ratio */
+  display: block; /* Remove any unwanted space below the image */
+}

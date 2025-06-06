@@ -1,0 +1,181 @@
+/***************************************************
+ ****************************************************
+
+ This is the structure of the project status page
+ and the project status table
+
+ ****************************************************
+ ***************************************************/
+
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Wrapper around the overview + events */
+.content-section {
+    padding: 3rem 1.5rem;
+    background-color: #ffffff;
+  }
+  
+  @media (min-width: 768px) {
+    .content-section {
+      padding: 4rem 4rem;
+    }
+  }
+  
+  /* Project Overview Title */
+  .project-overview-title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    color: #377eff;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-family: "Roboto", sans-serif;
+    padding-left: 0; /* <-- changed from 270px */
+  }
+  
+  @media (min-width: 768px) {
+    .project-overview-title {
+      padding-left: 0; /* or maybe try 1rem if you want slight indent */
+    }
+  }
+  
+
+  @media (max-width: 767px) {
+    .project-overview-title {
+      padding-left: 0.25rem;
+      text-align: left;
+    }
+  }
+  
+  /* Section underline */
+  .with-underline {
+    border-bottom: 2px solid #d8d8d8;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Body text consistent */
+  .project-overview-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444342;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Two-column layout for overview */
+  .overview-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem; /* controls spacing between the three sections */
+    padding: 0 5rem; /* adds side spacing */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }  
+  
+  /* Right side text */
+  .overview-text-group {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .right-sidebar {
+    flex: 0 0 220px;
+  }
+  
+  /* Survey (left side) */
+  .survey-box {
+    background-color: #ffffff;
+    padding: 20px;
+    flex: 0 0 auto; /* Sets fixed width but in a flex-friendly way */
+
+  }
+  
+  .survey-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007c41;
+    margin-bottom: 0.75rem;
+  }
+  
+  .survey-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #444342;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .survey-button {
+    display: inline-block;
+    background-color: #007c41;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .survey-button:hover {
+    background-color: #95B387;
+  }
+
+  .sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007a33;
+    text-transform: none;
+    margin: 0 0 0.5rem 0; /* remove top margin */
+    min-height: 24px;
+  }
+  
+  .documentation-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* mobile default */
+    gap: 2rem;
+    margin-top: 3rem; /* space below the overview-grid */
+  }
+  
+  /* Events section layout */
+  @media (min-width: 768px) {
+    .documentation-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Individual event cards */
+  .documentation-card {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+  
+  .documentation-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #537744;
+    margin-bottom: 1rem;
+  }
+  
+  .documentation-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .documentation-text {
+    color: #444342;
+    margin-bottom: 0.5rem;
+  }
+  
+  .documentation-subtext {
+    font-size: 0.875rem;
+    color: #444342;
+  }
+  

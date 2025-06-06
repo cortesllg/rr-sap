@@ -1,0 +1,124 @@
+.fg-subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #e0f2f1;
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #377eff;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+  min-height: 24px;
+}
+
+/* Section Content Wrapper */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .content-section {
+    padding: 4rem 4rem;
+  }
+}
+
+/* Section Title with Underline */
+.project-overview-title,
+.involved-title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  color: #377eff;
+  margin-bottom: 0.5rem; /* Reduced margin to avoid extra space */
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  .project-overview-title,
+  .involved-title {
+    padding-left: 0.25rem;
+    text-align: left;
+  }
+}
+
+.with-underline {
+  border-bottom: 2px solid #d8d8d8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Body Text */
+.project-overview-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444342;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Sidebar box (left and right) */
+aside {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Poll section */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.75rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.25rem;
+  accent-color: #377eff;
+  cursor: pointer;
+}
+
+form label {
+  font-size: 14px;
+  color: #313F58;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Poll Submit Button */
+.poll-submit-button {
+  background-color: #377eff;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  font-size: 14px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.poll-submit-button:hover {
+  background-color: #005fa3;
+}
+
+/* Center content wrapper */
+.center-content {
+  flex: 1;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
