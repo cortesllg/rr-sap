@@ -100,7 +100,7 @@
   .survey-title {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #007c41;
+    color: #377eff;
     margin-bottom: 0.75rem;
   }
   
@@ -114,7 +114,7 @@
   
   .survey-button {
     display: inline-block;
-    background-color: #007c41;
+    background-color: #377eff;
     color: white;
     padding: 0.6rem 1.2rem;
     text-decoration: none;
@@ -128,7 +128,7 @@
   .sidebar-title {
     font-size: 20px;
     font-weight: bold;
-    color: #007a33;
+    color: #377eff;
     text-transform: none;
     margin: 0 0 0.5rem 0; /* remove top margin */
     min-height: 24px;
@@ -159,7 +159,7 @@
   .documentation-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #537744;
+    color: #377eff;
     margin-bottom: 1rem;
   }
   

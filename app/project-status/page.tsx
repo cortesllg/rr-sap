@@ -171,6 +171,7 @@ export default function ProjectStatus() {
               style={{
                 fontSize: "2rem",
                 fontWeight: "bold",
+                color: "#377eff", // Primary color
                 marginBottom: "3rem",
                 borderBottom: "2px solid #ccc",
                 paddingBottom: "0.5rem",

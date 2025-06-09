@@ -23,7 +23,7 @@
   font-size: 28px;
   text-align: center;
   font-weight: 700;
-  color: #007c41;
+  color: #377eff;
   margin-bottom: 1rem;
   margin-top: 0;
   font-family: "Roboto", sans-serif;
@@ -92,7 +92,7 @@
 .survey-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #007c41;
+  color: #377eff;
   margin-bottom: 0.75rem;
 }
 
@@ -106,7 +106,7 @@
 
 .survey-button {
   display: inline-block;
-  background-color: #007c41;
+  background-color: #377eff;
   color: white;
   padding: 0.6rem 1.2rem;
   text-decoration: none;
@@ -120,7 +120,6 @@
 .sidebar-title {
   font-size: 20px;
   font-weight: bold;
-  color: #007a33;
   text-transform: uppercase;
   margin: 0 0 0.5rem 0; /* remove top margin */
   min-height: 24px;
