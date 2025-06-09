@@ -20,7 +20,7 @@ const Contact = ({ isMobile }: ContactProps) => {
     emailjs
       .sendForm(
         "service_3t5eqhp",
-        "template_rkp8eim",
+        "template_jfgnaed",
         form.current,
         "SI8aWGGuqvqbjZp6x"
       )
