@@ -23,9 +23,9 @@ const Survey = ({ isMobile }: SurveyProps) => {
           lineHeight: "1.75",
         }}
       >
-        Help shape the future of active transportation in Robinson Rancheria!
-        Take a few minutes to complete our online survey and share your
-        experiences, concerns, and ideas.
+        Help shape the future of transportation in Robinson Rancheria! Take a
+        few minutes to complete our online survey and share your experiences,
+        concerns, and ideas.
       </p>
 
       {/* Survey Details */}

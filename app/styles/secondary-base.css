@@ -26,9 +26,9 @@ such as: project-status/page.tsx
     right: 0;
     width: 0;
     height: 0;
-    border-bottom: 50px solid #377eff; /* Shorter height (vertical) */
-    border-left: 80vw solid transparent; /* Longer length (horizontal) */
-    z-index: 5;
+    border-bottom: 0px solid #377eff; /* Shorter height (vertical) */
+    border-left: 0vw solid transparent; /* Longer length (horizontal) */
+    z-index: 0;
   }
   
   /* Overlay wrapper to hold both text layers */
@@ -50,7 +50,7 @@ such as: project-status/page.tsx
     font-size: clamp(40px, 10vw, 130px);
     font-weight: bold;
     font-family: "Roboto", sans-serif;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     white-space: normal; /* allow wrapping */
     max-width: 90vw; /* prevent overflow */
@@ -75,3 +75,4 @@ such as: project-status/page.tsx
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     word-break: break-word; /* Ensures long words break instead of overflowing */
   }
+

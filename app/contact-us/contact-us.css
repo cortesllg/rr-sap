@@ -10,7 +10,6 @@
 /* Wrapper around the overview + events */
 .content-section {
   padding: 3rem 1.5rem;
-  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {

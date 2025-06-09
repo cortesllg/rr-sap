@@ -45,11 +45,7 @@ export default function Home() {
   return (
     <div>
       <div className="image-container">
-        <img
-          src="/images/Buffered Bike Lane Photo.JPG"
-          alt="Header Image"
-          className="header-image"
-        />
+
         <div className="overlay-text">
           <h2 className="fade-up observe">
             <span className="notranslate"> ROBINSON RANCHERIA</span>
@@ -126,11 +122,7 @@ export default function Home() {
 
       {/* NEW FULL-WIDTH IMAGE BETWEEN DESCRIPTION AND MISSION */}
       <div className="full-width-image">
-        <img
-          src="/images/Header Image.jpg"
-          alt="Community biking and walking"
-          className="full-width-img"
-        />
+
       </div>
 
       <section className="mission-section">
@@ -142,7 +134,7 @@ export default function Home() {
         <hr className="mission-divider" />
         <p className="mission-text fade-in observe">
           Robinson Rancheria is committed to fostering a safe, sustainable, and
-          connected community through an equitable active transportation plan.
+          connected community through an equitable safety action plan.
           By prioritizing the health, well-being, and mobility of our tribal
           members and neighbors, we aim to create accessible pathways, promote
           walking and cycling, and honor our ancestral lands while reducing our

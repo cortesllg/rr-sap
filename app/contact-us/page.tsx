@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import "./contact-us.css"; // Import your CSS file
 import QuickPoll from "../components/QuickPoll";
+import "../styles/secondary-base.css";
 import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -65,11 +66,7 @@ export default function ContactUs() {
       </Head>
 
       <div className="image-container1">
-        <img
-          src="/images/Header Image.jpg"
-          alt="Header Image"
-          className="header-image"
-        />
+
         <div className="overlay-text1">
           <div className="bg-heading">GET IN TOUCH</div>
           <div className="fg-subtitle">
@@ -93,8 +90,8 @@ export default function ContactUs() {
             justifyContent: "center",
             alignItems: "flex-start",
             gap: isMobile ? "2rem" : "3rem",
-            backgroundColor: "#ffffff",
-            borderRadius: "8px",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderRadius: "16px",
             boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
             padding: isMobile ? "0" : "0 2rem 0 2rem",
             marginTop: ".78rem",
@@ -110,6 +107,7 @@ export default function ContactUs() {
               padding: "1rem 1rem",
               marginTop: isMobile ? "1rem" : "2rem",
               fontSize: "14px",
+              borderRadius: "16px",
               alignSelf: isMobile ? "center" : "flex-start",
               textAlign: "center",
               width: isMobile ? "80%" : "auto",

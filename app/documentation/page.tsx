@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import QuickPoll from "../components/QuickPoll"; // Assuming QuickPoll is in the components folder
 import "./documentation.css"; // Assuming you have a CSS file for styling
+import "../styles/secondary-base.css";
 import { useState, useEffect } from "react";
 
 export default function Documentation() {
@@ -31,11 +32,7 @@ export default function Documentation() {
       </Head>
 
       <div className="image-container1">
-        <img
-          src="/images/Header Image.jpg"
-          alt="Header Image"
-          className="header-image"
-        />
+
         <div className="overlay-text1">
           <div className="bg-heading">DOCUMENTATION</div>
           <div className="fg-subtitle">
@@ -61,8 +58,8 @@ export default function Documentation() {
             justifyContent: "center",
             alignItems: "flex-start",
             gap: isMobile ? "2rem" : "3rem",
-            backgroundColor: "#ffffff",
-            borderRadius: "8px",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderRadius: "16px",
             boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
             padding: isMobile ? "0" : "0 2rem 4rem 2rem",
             marginTop: ".78rem",
@@ -78,6 +75,7 @@ export default function Documentation() {
               padding: "1rem 1rem",
               marginTop: isMobile ? "1rem" : "2rem",
               fontSize: "14px",
+              borderRadius: "16px",
               alignSelf: isMobile ? "center" : "flex-start",
               width: isMobile ? "80%" : "auto",
               transform: isMobile ? "none" : "translateX(3rem)", // Adjust this to move it closer without affecting content size
@@ -91,7 +89,9 @@ export default function Documentation() {
                 textAlign: "center",
                 color: "#377eff",
                 fontWeight: "bold",
-                marginBottom: "1rem",
+                marginBottom: "1.5rem",
+                borderBottom: "2px solid #ccc",
+                paddingBottom: "0.5rem",  
               }}
             >
               Safe System Approach
@@ -190,7 +190,7 @@ export default function Documentation() {
                 style={{
                   background: "rgb(0, 0, 0, 0.1)",
                   padding: "2rem",
-                  borderRadius: "12px",
+                  borderRadius: "16px",
                   boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
                   textAlign: "center",
                 }}

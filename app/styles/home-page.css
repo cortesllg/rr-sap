@@ -12,7 +12,7 @@ This is the structure of the image and text overlay and goal box
 .image-container {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 55vh;
   overflow: hidden;
 }
 
@@ -86,7 +86,7 @@ This is the structure of the image and text overlay and goal box
   align-items: center; /* Center inner content horizontally */
   text-align: center; /* Center text inside */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 16px; /* Rounded corners */
 }
 
 /* Title of the goal box */
@@ -148,11 +148,11 @@ section h2 {
 .description {
   position: relative;
   margin: 40px auto; /* Add more space between goal box and description */
-  background-color: #ffffff; /* Beige background */
+  background-color: rgba(255, 255, 255, 0.8); /* Beige background */
   width: 80%; /* Align with the vertical line for OUR GOAL */
   padding: 20px;
   z-index: 1; /* Lower z-index, since we don't need overlap */
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 /* Inner content of the description */
@@ -202,7 +202,7 @@ section h2 {
   width: 100%;
   max-width: 1000px; /* Prevents stretching too wide */
   line-height: 1.6; /* Spaced lines for readability */
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 16px; /* Rounded corners */
 }
 
 /* Updates and call-to-action sections */
@@ -299,6 +299,9 @@ section h2 {
   margin: 10px auto 45px; /* Less space on top, keep nice spacing on bottom */
   width: 60%;
   text-align: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px; /* Rounded corners for the mission section */
 }
 
 .mission-title {
@@ -346,8 +349,10 @@ section h2 {
   font-family: "Roboto", sans-serif;
   margin: 40px auto;
   width: 80%;
-  padding: 0 20px;
+  padding:  20px 30px;
+  border-radius: 16px;
   margin-bottom: 80px;
+  background-color: rgb(214, 214, 214); /* Light background for contrast */
 }
 
 .objectives-title {

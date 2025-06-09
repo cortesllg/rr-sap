@@ -3,6 +3,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import "./project-status.css";
+import "../styles/secondary-base.css";
 import Survey from "../components/Survey";
 import Timeline from "../components/Timeline";
 import QuickPoll from "../components/QuickPoll";
@@ -50,11 +51,7 @@ export default function ProjectStatus() {
       </Head>
 
       <div className="image-container1">
-        <img
-          src="/images/Header Image.jpg"
-          alt="Header Image"
-          className="header-image"
-        />
+ 
         <div className="overlay-text1">
           <div className="bg-heading">PROJECT STATUS</div>
           <div className="fg-subtitle">
@@ -82,8 +79,8 @@ export default function ProjectStatus() {
             justifyContent: "center",
             alignItems: "flex-start",
             gap: isMobile ? "2rem" : "3rem",
-            backgroundColor: "#ffffff",
-            borderRadius: "8px",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderRadius: "16px",
             boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
             padding: isMobile ? "0" : "0 2rem 0 2rem",
             marginTop: ".78rem",
@@ -101,6 +98,7 @@ export default function ProjectStatus() {
               fontSize: "14px",
               alignSelf: isMobile ? "center" : "flex-start",
               textAlign: "center",
+              borderRadius: "16px",
               width: isMobile ? "80%" : "auto",
               transform: isMobile ? "none" : "translateX(3rem)", // Adjust this to move it closer without affecting content size
               boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
@@ -216,7 +214,7 @@ export default function ProjectStatus() {
                 style={{
                   background: "rgb(0, 0, 0, 0.1)",
                   padding: "2rem",
-                  borderRadius: "12px",
+                  borderRadius: "16px",
                   boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
                   textAlign: "center",
                   border: "1px solid #c8e6c9",

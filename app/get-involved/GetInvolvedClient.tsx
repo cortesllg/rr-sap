@@ -9,6 +9,7 @@ import Engagement from "../components/Engagement";
 import Survey from "../components/Survey";
 import Workshop from "../components/Workshop";
 import Contact from "../components/Contact";
+import "../styles/secondary-base.css";
 import QuickPoll from "../components/QuickPoll";
 
 import "./get-involved.css";
@@ -62,11 +63,7 @@ export default function GetInvolvedClient() {
   return (
     <>
       <div className="image-container1">
-        <img
-          src="/images/Header Image.jpg"
-          alt="Header"
-          className="header-image"
-        />
+
         <div className="overlay-text1">
           <div className="bg-heading">GET INVOLVED</div>
           <div className="fg-subtitle">
@@ -86,8 +83,8 @@ export default function GetInvolvedClient() {
             justifyContent: "center",
             alignItems: "flex-start",
             gap: isMobile ? "2rem" : "3rem",
-            backgroundColor: "#ffffff",
-            borderRadius: "8px",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderRadius: "16px",
             boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
             padding: isMobile ? "0" : "0 2rem 0 2rem",
             marginTop: ".78rem",
@@ -100,6 +97,7 @@ export default function GetInvolvedClient() {
               flex: isMobile ? "unset" : "0 0 22%",
               backgroundColor: "#d6d6d6",
               padding: "1rem 1rem",
+              borderRadius: "16px",
               marginTop: isMobile ? "1" : "2rem",
               fontSize: "14px",
               alignSelf: isMobile ? "center" : "flex-start",
@@ -137,7 +135,7 @@ export default function GetInvolvedClient() {
                     "color 0.3s, transform 0.3s, background-color 0.3s",
                   textAlign: "center",
                   padding: "0.5rem",
-                  borderRadius: "8px",
+                  borderRadius: "16px",
                 }}
                 onMouseOver={(e) => {
                   const target = e.target as HTMLElement;
