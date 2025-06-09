@@ -19,10 +19,10 @@ const Contact = ({ isMobile }: ContactProps) => {
     // You can find these in your EmailJS dashboard
     emailjs
       .sendForm(
-        "service_ay73hxk",
-        "template_m5kfvif",
+        "service_3t5eqhp",
+        "template_rkp8eim",
         form.current,
-        "nGDyKMmDutAYPKxKK"
+        "SI8aWGGuqvqbjZp6x"
       )
       .then(
         (result) => {

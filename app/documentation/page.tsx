@@ -142,13 +142,17 @@ export default function Documentation() {
               guiding framework to make places safer for people.
             </p>
 
-            <div className="fade-in" style={{ paddingTop: "0.5rem", textAlign: "center" }}>
+            <div
+              className="fade-in"
+              style={{ paddingTop: "0.5rem", textAlign: "center" }}
+            >
               <img
                 src="/images/system appraoch.webp"
                 alt="System Approach Image"
                 style={{
-                  maxWidth: isMobile ? "100%" : "340px",
+                  maxWidth: isMobile ? "100%" : "300px",
                   height: "auto",
+                  padding: "0.5rem 1.5rem",
                   borderRadius: "12px", // optional: adds rounded corners
                 }}
               />
