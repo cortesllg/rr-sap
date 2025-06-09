@@ -91,6 +91,7 @@ const Timeline = () => {
       }}
     >
       <h2
+        className="fade-in"
         style={{
           textAlign: "center",
           fontSize: "1.75rem",
@@ -101,7 +102,7 @@ const Timeline = () => {
         Project Timeline
       </h2>
 
-      <div style={{ position: "relative" }} ref={timelineRef}>
+      <div className="fade-in" style={{ position: "relative" }} ref={timelineRef}>  
         {/* Base Timeline Line */}
         <div
           style={{

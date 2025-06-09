@@ -63,12 +63,31 @@ export default function GetInvolvedClient() {
   return (
     <>
       <div className="image-container1">
-
-        <div className="overlay-text1">
+        <div className="overlay-text1 fade-in">
+          <div
+            className="fg-top-subtitle"
+            style={{
+              fontSize: "clamp(12px, 2vw, 28px)",
+              position: "relative",
+              top: isMobile ? "60px" : "60px",
+              left: isMobile ? "0px" : "-5px",
+              marginLeft: "0",
+              marginRight: "clamp(10px, 6vw, 80px)",
+              fontWeight: "normal",
+              fontFamily: "Roboto, sans-serif",
+              color: "#ffffff",
+              zIndex: 1,
+              marginTop: "0",
+              textShadow: " 2px 2px 4px rgba(0, 0, 0, 0.5)",
+              wordBreak: "break-word",
+            }}
+          >
+            Robinson Rancheria Comprehensive Safety Action Plan
+          </div>
           <div className="bg-heading">GET INVOLVED</div>
           <div className="fg-subtitle">
-            Learn how you can get involved with the Safety Action Plan
-            in Robinson Rancheria
+            Learn how you can get involved with the Safety Action Plan in
+            Robinson Rancheria
           </div>
         </div>
       </div>
@@ -108,7 +127,7 @@ export default function GetInvolvedClient() {
             }}
           >
             <h3
-              className="sidebar-title"
+              className="sidebar-title fade-in"
               style={{
                 textDecoration: "underline",
                 textAlign: "center",
@@ -158,7 +177,7 @@ export default function GetInvolvedClient() {
 
           <main
             ref={mainContentRef}
-            className="overview-text-group"
+            className="overview-text-group  fade-in"
             style={{
               padding: isMobile ? "1rem" : "2rem 2rem",
               maxWidth: "1000px",
@@ -166,7 +185,7 @@ export default function GetInvolvedClient() {
             }}
           >
             <div
-              className="project-overview-title with-underline"
+              className="project-overview-title with-underline fade-in"
               style={{
                 fontSize: "2rem",
                 fontWeight: "bold",
@@ -190,13 +209,10 @@ export default function GetInvolvedClient() {
                 <Engagement isMobile={isMobile} />
               )}
               {activeSection === "Survey" && <Survey isMobile={isMobile} />}
-              {activeSection === "Workshop" && (
-                <Workshop isMobile={isMobile} />
-              )}
+              {activeSection === "Workshop" && <Workshop isMobile={isMobile} />}
               {activeSection === "Contact" && <Contact isMobile={isMobile} />}
             </Suspense>
           </main>
-
         </div>
       </section>
     </>

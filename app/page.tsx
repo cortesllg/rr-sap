@@ -51,7 +51,7 @@ export default function Home() {
           <h2 className="fade-up observe">
             <span className="notranslate"> ROBINSON RANCHERIA</span>
             <br />
-            SAFETY ACTION PLAN
+            COMPREHENSIVE SAFETY ACTION PLAN
           </h2>
 
           {/* Link to the survey form (IMPORTANT TO BE UDPATED WITH THE CORERCT LINK) */}

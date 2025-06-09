@@ -52,8 +52,27 @@ export default function ProjectStatus() {
       </Head>
 
       <div className="image-container1">
- 
-        <div className="overlay-text1">
+        <div className="overlay-text1 fade-in">
+          <div
+            className="fg-top-subtitle"
+            style={{
+              fontSize: "clamp(12px, 2vw, 28px)",
+              position: "relative",
+              top: isMobile ? "60px" : "60px",
+              left: isMobile ? "0px" : "-5px",
+              marginLeft: "0",
+              marginRight: "clamp(10px, 6vw, 80px)",
+              fontWeight: "normal",
+              fontFamily: "Roboto, sans-serif",
+              color: "#ffffff",
+              zIndex: 1,
+              marginTop: "0",
+              textShadow: " 2px 2px 4px rgba(0, 0, 0, 0.5)",
+              wordBreak: "break-word",
+            }}
+          >
+            Robinson Rancheria Comprehensive Safety Action Plan
+          </div>
           <div className="bg-heading">PROJECT STATUS</div>
           <div className="fg-subtitle">
             See what is ongoing with the Robinson Rancheria Safety Action Plan
@@ -107,7 +126,7 @@ export default function ProjectStatus() {
             }}
           >
             <h3
-              className="sidebar-title"
+              className="sidebar-title fade-in"
               style={{
                 textDecoration: "underline",
                 textAlign: "center",
@@ -121,6 +140,7 @@ export default function ProjectStatus() {
             </h3>
 
             <p
+              className="fade-in"
               style={{
                 marginBottom: "1.5rem",
                 color: "#4b5563",
@@ -137,6 +157,7 @@ export default function ProjectStatus() {
             </p>
 
             <span
+              className="fade-in"
               title="Survey is currently unavailable. Come back later!"
               style={{
                 backgroundColor: "#cccccc",
@@ -167,7 +188,7 @@ export default function ProjectStatus() {
             }}
           >
             <div
-              className="project-overview-title with-underline"
+              className="project-overview-title with-underline  fade-in"
               style={{
                 fontSize: "2rem",
                 fontWeight: "bold",
@@ -182,7 +203,7 @@ export default function ProjectStatus() {
             </div>
 
             <div
-              className="project-overview-text"
+              className="project-overview-text fade-in"
               style={{
                 fontSize: isMobile ? "15px" : "16px",
                 padding: isMobile ? "1rem" : "0 2rem",
@@ -212,7 +233,7 @@ export default function ProjectStatus() {
             >
               {/* Upcoming Events */}
               <div
-                className="event-card"
+                className="event-card fade-in"
                 style={{
                   background: "rgb(0, 0, 0, 0.1)",
                   padding: "2rem",

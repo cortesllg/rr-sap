@@ -28,7 +28,7 @@ export default function ContactUs() {
     if (!form.current) return;
 
     // Make sure to update the service ID, template ID, and user ID with your own EmailJS credentials
-    // You can find these in your EmailJS dashboard 
+    // You can find these in your EmailJS dashboard
     emailjs
       .sendForm(
         "service_ay73hxk",
@@ -66,8 +66,27 @@ export default function ContactUs() {
       </Head>
 
       <div className="image-container1">
-
-        <div className="overlay-text1">
+        <div className="overlay-text1 fade-in">
+          <div
+            className="fg-top-subtitle"
+            style={{
+              fontSize: "clamp(12px, 2vw, 28px)",
+              position: "relative",
+              top: isMobile ? "60px" : "60px",
+              left: isMobile ? "0px" : "-5px",
+              marginLeft: "0",
+              marginRight: "clamp(10px, 6vw, 80px)",
+              fontWeight: "normal",
+              fontFamily: "Roboto, sans-serif",
+              color: "#ffffff",
+              zIndex: 1,
+              marginTop: "0",
+              textShadow: " 2px 2px 4px rgba(0, 0, 0, 0.5)",
+              wordBreak: "break-word",
+            }}
+          >
+            Robinson Rancheria Comprehensive Safety Action Plan
+          </div>
           <div className="bg-heading">GET IN TOUCH</div>
           <div className="fg-subtitle">
             Have a question or message? Send a message to the team!
@@ -117,7 +136,7 @@ export default function ContactUs() {
             }}
           >
             <h3
-              className="sidebar-title"
+              className="sidebar-title  fade-in"
               style={{
                 textDecoration: "underline",
                 textAlign: "center",
@@ -131,6 +150,7 @@ export default function ContactUs() {
             </h3>
 
             <p
+              className="fade-in"
               style={{
                 marginBottom: "1.5rem",
                 color: "#4b5563",
@@ -147,6 +167,7 @@ export default function ContactUs() {
             </p>
 
             <span
+              className="fade-in"
               title="Survey is currently unavailable. Come back later!"
               style={{
                 backgroundColor: "#cccccc",
@@ -177,7 +198,7 @@ export default function ContactUs() {
             }}
           >
             <div
-              className="project-overview-title with-underline"
+              className="project-overview-title with-underline  fade-in"
               style={{
                 fontSize: "2rem",
                 fontWeight: "bold",

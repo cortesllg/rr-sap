@@ -32,8 +32,27 @@ export default function Documentation() {
       </Head>
 
       <div className="image-container1">
-
-        <div className="overlay-text1">
+        <div className="overlay-text1 fade-in">
+          <div
+            className="fg-top-subtitle"
+            style={{
+              fontSize: "clamp(12px, 2vw, 28px)",
+              position: "relative",
+              top: isMobile ? "60px" : "60px",
+              left: isMobile ? "0px" : "-5px",
+              marginLeft: "0",
+              marginRight: "clamp(10px, 6vw, 80px)",
+              fontWeight: "normal",
+              fontFamily: "Roboto, sans-serif",
+              color: "#ffffff",
+              zIndex: 1,
+              marginTop: "0",
+              textShadow: " 2px 2px 4px rgba(0, 0, 0, 0.5)",
+              wordBreak: "break-word",
+            }}
+          >
+            Robinson Rancheria Comprehensive Safety Action Plan
+          </div>
           <div className="bg-heading">DOCUMENTATION</div>
           <div className="fg-subtitle">
             Get a more in-depth view of what is being done
@@ -84,20 +103,22 @@ export default function Documentation() {
             }}
           >
             <h3
-              className="sidebar-title"
+              className="sidebar-title fade-in"
               style={{
                 textAlign: "center",
                 color: "#377eff",
                 fontWeight: "bold",
+                textTransform: "uppercase",
                 marginBottom: "1.5rem",
                 borderBottom: "2px solid #ccc",
-                paddingBottom: "0.5rem",  
+                paddingBottom: "0.5rem",
               }}
             >
               Safe System Approach
             </h3>
 
             <p
+              className="fade-in"
               style={{
                 marginBottom: "1.5rem",
                 color: "#4b5563",
@@ -121,12 +142,12 @@ export default function Documentation() {
               guiding framework to make places safer for people.
             </p>
 
-            <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
+            <div className="fade-in" style={{ paddingTop: "0.5rem", textAlign: "center" }}>
               <img
                 src="/images/system appraoch.webp"
                 alt="System Approach Image"
                 style={{
-                  maxWidth: isMobile ? "100%" : "300px",
+                  maxWidth: isMobile ? "100%" : "340px",
                   height: "auto",
                   borderRadius: "12px", // optional: adds rounded corners
                 }}
@@ -144,7 +165,7 @@ export default function Documentation() {
             }}
           >
             <div
-              className="project-overview-title with-underline"
+              className="project-overview-title with-underline fade-in"
               style={{
                 fontSize: "2rem",
                 fontWeight: "bold",
@@ -158,7 +179,7 @@ export default function Documentation() {
             </div>
 
             <div
-              className="project-overview-text"
+              className="project-overview-text fade-in"
               style={{
                 fontSize: isMobile ? "15px" : "16px",
                 padding: isMobile ? "1rem" : "0 2rem",
@@ -186,7 +207,7 @@ export default function Documentation() {
             >
               {/* Documentations */}
               <div
-                className="documentation-card"
+                className="documentation-card  fade-in"
                 style={{
                   background: "rgb(0, 0, 0, 0.1)",
                   padding: "2rem",
