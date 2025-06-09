@@ -1,8 +1,8 @@
 "use client";
 
 import Head from "next/head";
-import Link from "next/link";
-import QuickPoll from "../components/QuickPoll"; // Assuming QuickPoll is in the components folder
+// import Link from "next/link";
+// import QuickPoll from "../components/QuickPoll"; // Assuming QuickPoll is in the components folder
 import "./documentation.css"; // Assuming you have a CSS file for styling
 import "../styles/secondary-base.css";
 import { useState, useEffect } from "react";

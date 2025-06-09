@@ -23,7 +23,7 @@ const timelineEvents = [
 
 const Timeline = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [isTranslated, setIsTranslated] = useState(false);
+  // const [setIsTranslated] = useState(false);
   const timelineRef = useRef<HTMLDivElement>(null);
   const [lineHeight, setLineHeight] = useState(0);
 
@@ -49,7 +49,7 @@ const Timeline = () => {
     updateTimelineHeight(); // initial set
 
     const observer = new MutationObserver(() => {
-      setIsTranslated(true); // track translation state
+      // setIsTranslated(true); // track translation state
       updateTimelineHeight(); // recalculate on content change
     });
 

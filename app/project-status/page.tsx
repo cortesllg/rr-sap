@@ -1,12 +1,13 @@
 "use client";
 
 import Head from "next/head";
-import Link from "next/link";
+// Will be used once we have our surveys set
+// import Link from "next/link";
 import "./project-status.css";
 import "../styles/secondary-base.css";
-import Survey from "../components/Survey";
+// import Survey from "../components/Survey";
 import Timeline from "../components/Timeline";
-import QuickPoll from "../components/QuickPoll";
+// import QuickPoll from "../components/QuickPoll";
 import { useState, useEffect } from "react";
 
 export default function ProjectStatus() {
@@ -23,20 +24,20 @@ export default function ProjectStatus() {
 
   // Poll options for the QuickPoll component
   // These options are used in the QuickPoll component, but we don't need it for this project
-  const pollOptions = [
-    "People driving too fast",
-    "Drivers not yielding or stopping at intersections",
-    "Distracted driving",
-    "Lack of connected sidewalks/bike paths",
-    "Poor maintenance of sidewalks/bike paths",
-    "Lack of crosswalks",
-    "Lack of protected bike lanes",
-    "Lack of lighting",
-    "Poor visibility at intersections",
-    "Lack of traffic violation enforcement",
-    "Potholes",
-    "Other (please specify)",
-  ];
+  // const pollOptions = [
+  //   "People driving too fast",
+  //   "Drivers not yielding or stopping at intersections",
+  //   "Distracted driving",
+  //   "Lack of connected sidewalks/bike paths",
+  //   "Poor maintenance of sidewalks/bike paths",
+  //   "Lack of crosswalks",
+  //   "Lack of protected bike lanes",
+  //   "Lack of lighting",
+  //   "Poor visibility at intersections",
+  //   "Lack of traffic violation enforcement",
+  //   "Potholes",
+  //   "Other (please specify)",
+  // ];
 
   return (
     <div>

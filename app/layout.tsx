@@ -4,13 +4,13 @@ import "./globals.css";
 import Link from "next/link";
 import "./styles/base.css";
 // These may not be necessary, but are included for completeness to see what pages are avaiable
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaXTwitter,
-  FaEnvelope,
-} from "react-icons/fa6";
+// import {
+//   FaFacebook,
+//   FaInstagram,
+//   FaYoutube,
+//   FaXTwitter,
+//   FaEnvelope,
+// } from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: "Robinson Rancheria Safety Action Plan",

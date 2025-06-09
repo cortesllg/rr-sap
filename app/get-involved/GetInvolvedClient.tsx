@@ -10,7 +10,7 @@ import Survey from "../components/Survey";
 import Workshop from "../components/Workshop";
 import Contact from "../components/Contact";
 import "../styles/secondary-base.css";
-import QuickPoll from "../components/QuickPoll";
+// import QuickPoll from "../components/QuickPoll";
 
 import "./get-involved.css";
 

@@ -1,9 +1,9 @@
 "use client";
 
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 import "./contact-us.css"; // Import your CSS file
-import QuickPoll from "../components/QuickPoll";
+// import QuickPoll from "../components/QuickPoll";
 import "../styles/secondary-base.css";
 import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";

@@ -1,15 +1,16 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import "./styles/base.css";
 import "./styles/home-page.css";
-import Head from "next/head";
-import Link from "next/link";
+// import Head from "next/head";
+// import Link from "next/link";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
-  const [activeSection, setActiveSection] = useState("InvolvedIntro");
+  // May have functionality in the future to track which section is active
+  // const [activeSection, setActiveSection] = useState("InvolvedIntro");
 
   useEffect(() => {
     const handleResize = () => {
@@ -128,7 +129,7 @@ export default function Home() {
       <section className="mission-section">
         <div className="mission-title fade-in observe">
           <span className="arrow left">❂</span>
-          <h2 className="title-text">Robinson Rancheria's Mission</h2>
+          <h2 className="title-text">Robinson Rancheria&rsquo;s Mission</h2>
           <span className="arrow right">❂</span>
         </div>
         <hr className="mission-divider" />
