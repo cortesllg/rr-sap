@@ -46,7 +46,6 @@ export default function Home() {
   return (
     <div>
       <div className="image-container">
-
         <div className="overlay-text">
           <h2 className="fade-up observe">
             <span className="notranslate"> ROBINSON RANCHERIA</span>
@@ -55,9 +54,11 @@ export default function Home() {
           </h2>
 
           {/* Link to the survey form (IMPORTANT TO BE UDPATED WITH THE CORERCT LINK) */}
-          <p className="p2 fade-up observe">Get involved by sharing your input!</p>
+          <p className="p2 fade-up observe">
+            Get involved by sharing your input!
+          </p>
           {/* Button to the survey form  would go below*/}
-          </div>
+        </div>
       </div>
 
       <section className="goal-box">
@@ -81,8 +82,12 @@ export default function Home() {
             <span className="arrow right">❂</span>
           </div>
           <div className="description-box">
-            <p className="fade-in observe"
-              style={{ padding: isMobile ? "1rem 2rem" : "2rem 3rem 1rem 3rem",  }}>
+            <p
+              className="fade-in observe"
+              style={{
+                padding: isMobile ? "1rem 2rem" : "2rem 3rem 1rem 3rem",
+              }}
+            >
               A part of the Safe Roads for All (SS4A) program, a Safety Action
               Plan (SAP) is a plan developed to identify, analyze, and
               prioritize safety related improvements within the Tribal
@@ -122,9 +127,7 @@ export default function Home() {
       </section>
 
       {/* NEW FULL-WIDTH IMAGE BETWEEN DESCRIPTION AND MISSION */}
-      <div className="full-width-image">
-
-      </div>
+      <div className="full-width-image"></div>
 
       <section className="mission-section">
         <div className="mission-title fade-in observe">
@@ -135,8 +138,8 @@ export default function Home() {
         <hr className="mission-divider" />
         <p className="mission-text fade-in observe">
           Robinson Rancheria is committed to fostering a safe, sustainable, and
-          connected community through an equitable safety action plan.
-          By prioritizing the health, well-being, and mobility of our tribal
+          connected community through an equitable safety action plan. By
+          prioritizing the health, well-being, and mobility of our tribal
           members and neighbors, we aim to create accessible pathways, promote
           walking and cycling, and honor our ancestral lands while reducing our
           environmental impact. Together, we will build a future where every
@@ -145,7 +148,9 @@ export default function Home() {
       </section>
 
       <section className="objectives-section">
-        <h2 className="objectives-title fade-up observe">Our Five Objectives:</h2>
+        <h2 className="objectives-title fade-up observe">
+          Our Five Objectives:
+        </h2>
         <div className="objective-item">
           <div className="objective-number fade-up observe">1</div>
           <div>

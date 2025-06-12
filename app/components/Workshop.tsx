@@ -24,8 +24,9 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
         }}
       >
         We invite you to join our upcoming public workshop! Share your ideas,
-        concerns, and feedback to help improve the Safety Action Plan in Robinson
-        Rancheria. Your voice matters and we look forward to hearing from you.
+        concerns, and feedback to help improve the Safety Action Plan in
+        Robinson Rancheria. Your voice matters and we look forward to hearing
+        from you.
       </p>
 
       {/* Workshop Details */}

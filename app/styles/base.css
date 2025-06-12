@@ -1,7 +1,7 @@
 /* Base styles for the entire application */
 body {
   font-family: "Roboto", sans-serif; /* Roboto for default body text */
-  background-image: url('/images/Oak-Tree-1.jpg');
+  background-image: url("/images/Oak-Tree-1.jpg");
   color: black;
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
 
 /* globals.css */
 .page-background {
-  background-image: url('/images/Oak-Tree-1.jpg'); /* path is relative to /public */
+  background-image: url("/images/Oak-Tree-1.jpg"); /* path is relative to /public */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,6 +35,16 @@ header.hero {
 header.hero img {
   max-height: 129px;
   max-width: 100%;
+}
+
+/* Add to base.css or globals.css */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
 }
 
 /* Not currently used, but if we need google translate here is the css for it */
@@ -105,7 +115,6 @@ header.hero img {
   font-weight: normal; /* Lighter font weight */
   margin-top: 8px; /* Add space between main text and description */
 }
-
 
 /***************************************************
 ****************************************************
@@ -238,7 +247,6 @@ ul li {
   margin-bottom: 10px;
 }
 
-
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   header.hero {
@@ -286,7 +294,7 @@ ul li {
     gap: 10px; /* Reduce gap if 70px is too much for mobile */
   }
 
-  .footer-links  div {
+  .footer-links div {
     margin: 0 !important; /* override any margins interfering with spacing */
   }
 

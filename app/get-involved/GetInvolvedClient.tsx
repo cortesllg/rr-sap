@@ -10,15 +10,24 @@ import Survey from "../components/Survey";
 import Workshop from "../components/Workshop";
 import Contact from "../components/Contact";
 import "../styles/secondary-base.css";
+// polling section that is not used yet
+// Uncomment the following line when QuickPoll component is ready (needs API configuration)
 // import QuickPoll from "../components/QuickPoll";
 
 import "./get-involved.css";
 
 export default function GetInvolvedClient() {
+  // Ref for the main content area to scroll to the correct section
   const mainContentRef = useRef<HTMLDivElement | null>(null);
+  // State to manage mobile view and active section
   const [isMobile, setIsMobile] = useState(false);
+  // State to track the currently active section
+  // Default section is "InvolvedIntro"
   const [activeSection, setActiveSection] = useState("InvolvedIntro");
 
+  // Use search params to get the section from the URL
+  // This allows the app to scroll to the correct section based on the URL parameter
+  // For example, if the URL is /get-involved?section=Engagement, it will scroll to the Engagement section
   const searchParams = useSearchParams();
   const sectionParam = searchParams.get("section");
 
@@ -31,6 +40,8 @@ export default function GetInvolvedClient() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Effect to scroll to the section specified in the URL parameter
+  // This effect runs when the component mounts or when the sectionParam changes
   useEffect(() => {
     if (
       sectionParam &&
@@ -52,6 +63,8 @@ export default function GetInvolvedClient() {
     }
   }, [sectionParam, isMobile]);
 
+  // List of participation items with labels and corresponding sections
+  // This list is used to render the sidebar with clickable items
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
     { label: "Online Comment Map", section: "Engagement" },
@@ -92,7 +105,7 @@ export default function GetInvolvedClient() {
         </div>
       </div>
 
-      {/* backGroundColor usually nothing, added to see */}
+      {/* backGroundColor usually nothing, added to see background with transparency*/}
       <section className="content-section">
         <div
           className="overview-grid"

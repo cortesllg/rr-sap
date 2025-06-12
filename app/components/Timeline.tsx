@@ -86,7 +86,7 @@ const Timeline = () => {
         margin: "0 auto",
         marginTop: "4rem",
         marginBottom: "2rem",
-      
+
         transform: "translateY(-3rem)",
       }}
     >
@@ -102,7 +102,11 @@ const Timeline = () => {
         Project Timeline
       </h2>
 
-      <div className="fade-in" style={{ position: "relative" }} ref={timelineRef}>  
+      <div
+        className="fade-in"
+        style={{ position: "relative" }}
+        ref={timelineRef}
+      >
         {/* Base Timeline Line */}
         <div
           style={{

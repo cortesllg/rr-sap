@@ -27,12 +27,13 @@ const Engagement = ({ isMobile }: EngagementProps) => {
         }}
       >
         We want to hear from you! Share your experiences traveling on the
-        roadways within the Tribe. We are working with Street Story, developed by
-        SafeTREC and UC Berkeley, where you can mark locations where you&apos;ve
-        encountered safety challenges—whether you&apos;re driving, walking,
-        biking, or using another mode of transportation. You can also highlight
-        specific concerns like speeding, poor lighting, or missing sidewalks.
-        Check out the user guide for how to report on the Street Story:
+        roadways within the Tribe. We are working with Street Story, developed
+        by SafeTREC and UC Berkeley, where you can mark locations where
+        you&apos;ve encountered safety challenges—whether you&apos;re driving,
+        walking, biking, or using another mode of transportation. You can also
+        highlight specific concerns like speeding, poor lighting, or missing
+        sidewalks. Check out the user guide for how to report on the Street
+        Story:
       </p>
 
       {/* User Guide and StreetMap Links */}
