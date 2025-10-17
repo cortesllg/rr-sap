@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import "./styles/base.css";
 import "./styles/home-page.css";
 // import Head from "next/head";
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -58,6 +58,34 @@ export default function Home() {
             Get involved by sharing your input!
           </p>
           {/* Button to the survey form  would go below*/}
+          <div className="fade-in" style={{ textAlign: "center" }}>
+            <Link
+              href="/get-involved?section=Survey"
+              style={{
+                backgroundColor: "#e67528",
+                color: "white",
+                fontWeight: "bold",
+                padding: isMobile ? "0.5rem 1.2rem" : "0.6rem 1.5rem",
+                fontSize: isMobile ? "14px" : "16px",
+                borderRadius: "9999px",
+                border: "none",
+                cursor: "pointer",
+                fontFamily: "Roboto", /* Roboto for modern body text */
+                transition: "background-color 0.3s",
+                textDecoration: "none",
+                display: "inline-block",
+              }}
+              rel="noopener noreferrer"
+              onMouseOver={(e) =>
+                (e.currentTarget.style.backgroundColor = "#9c4a19")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.backgroundColor = "#e67528")
+              }
+            >
+              Fill out the Feedback Form
+            </Link>
+          </div>
         </div>
       </div>
 

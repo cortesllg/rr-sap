@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-// import Link from "next/link";
+import Link from "next/link";
 import "./contact-us.css"; // Import your CSS file
 // import QuickPoll from "../components/QuickPoll";
 import "../styles/secondary-base.css";
@@ -166,26 +166,32 @@ export default function ContactUs() {
               safer future for everyone!
             </p>
 
-            <span
-              className="fade-in"
-              title="Survey is currently unavailable. Come back later!"
+            <Link
+              href="/get-involved?section=Survey"
               style={{
-                backgroundColor: "#cccccc",
-                color: "#666666",
+                backgroundColor: "#e67528",
+                color: "white",
                 fontWeight: "bold",
-                padding: "0.5rem 1.5rem",
-                fontSize: "14px",
+                padding: isMobile ? "0.5rem 1.2rem" : "0.6rem 1.5rem",
+                fontSize: isMobile ? "14px" : "14px",
                 borderRadius: "9999px",
+                border: "none",
+                cursor: "pointer",
+                fontFamily: "Roboto" /* Roboto for modern body text */,
+                transition: "background-color 0.3s",
                 textDecoration: "none",
                 display: "inline-block",
-                alignSelf: "center",
-                cursor: "not-allowed",
-                userSelect: "none",
-                transition: "none",
               }}
+              rel="noopener noreferrer"
+              onMouseOver={(e) =>
+                (e.currentTarget.style.backgroundColor = "#9c4a19")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.backgroundColor = "#e67528")
+              }
             >
-              Take The Survey (To be Opened Soon)
-            </span>
+              Fill out the Feedback Form
+            </Link>
           </aside>
 
           {/* Center Text Section with Send a Message Section */}
@@ -328,7 +334,7 @@ export default function ContactUs() {
               <button
                 type="submit"
                 style={{
-                  backgroundColor: "#377eff",
+                  backgroundColor: "#e67528",
                   color: "white",
                   fontWeight: "bold",
                   padding: "0.5rem 1.5rem",
@@ -338,14 +344,13 @@ export default function ContactUs() {
                   border: "none",
                   cursor: "pointer",
                   transition: "background-color 0.3s",
-                  textTransform: "uppercase",
                   alignSelf: "center",
                 }}
                 onMouseOver={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#005fa3")
+                  (e.currentTarget.style.backgroundColor = "#9c4a19")
                 }
                 onMouseOut={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#377eff")
+                  (e.currentTarget.style.backgroundColor = "#e67528")
                 }
               >
                 Submit
@@ -355,7 +360,7 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* Thank You Modal */}
+      {/* Thank You Modal isModalOpen*/}
       {isModalOpen && (
         <div
           style={{
@@ -391,20 +396,21 @@ export default function ContactUs() {
               onClick={closeModal}
               style={{
                 marginTop: "1.5rem",
-                backgroundColor: "#377eff",
+                backgroundColor: "#e67528",
                 color: "white",
                 fontWeight: "bold",
                 padding: "0.5rem 1.5rem",
                 fontSize: "14px",
                 borderRadius: "9999px",
+                transition: "background-color 0.3s",
                 border: "none",
                 cursor: "pointer",
               }}
               onMouseOver={(e) =>
-                (e.currentTarget.style.backgroundColor = "#005fa3")
+                (e.currentTarget.style.backgroundColor = "#9c4a19")
               }
               onMouseOut={(e) =>
-                (e.currentTarget.style.backgroundColor = "#377eff")
+                (e.currentTarget.style.backgroundColor = "#e67528")
               }
             >
               Close

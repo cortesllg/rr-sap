@@ -54,7 +54,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
           rel="noopener noreferrer"
           style={{
             padding: "0.75rem 1.5rem",
-            backgroundColor: "#377eff",
+            backgroundColor: "#e67528",
             color: "#ffffff",
             textDecoration: "none",
             borderRadius: "16px",
@@ -64,10 +64,10 @@ const Engagement = ({ isMobile }: EngagementProps) => {
             transition: "background-color 0.3s",
           }}
           onMouseOver={(e) =>
-            (e.currentTarget.style.backgroundColor = "#005fa3")
+            (e.currentTarget.style.backgroundColor = "#9c4a19")
           }
           onMouseOut={(e) =>
-            (e.currentTarget.style.backgroundColor = "#377eff")
+            (e.currentTarget.style.backgroundColor = "#e67528")
           }
         >
           View User Guide
@@ -79,7 +79,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
           rel="noopener noreferrer"
           style={{
             padding: "0.75rem 1.5rem",
-            backgroundColor: "#377eff",
+            backgroundColor: "#e67528",
             color: "#ffffff",
             textDecoration: "none",
             borderRadius: "16px",
@@ -89,10 +89,10 @@ const Engagement = ({ isMobile }: EngagementProps) => {
             transition: "background-color 0.3s",
           }}
           onMouseOver={(e) =>
-            (e.currentTarget.style.backgroundColor = "#005fa3")
+            (e.currentTarget.style.backgroundColor = "#9c4a19")
           }
           onMouseOut={(e) =>
-            (e.currentTarget.style.backgroundColor = "#377eff")
+            (e.currentTarget.style.backgroundColor = "#e67528")
           }
         >
           Go to Street Story

@@ -185,7 +185,7 @@ const Contact = ({ isMobile }: ContactProps) => {
         <button
           type="submit"
           style={{
-            backgroundColor: "#377eff",
+            backgroundColor: "#e67528",
             color: "white",
             fontWeight: "bold",
             padding: "0.5rem 1.5rem",
@@ -195,21 +195,20 @@ const Contact = ({ isMobile }: ContactProps) => {
             border: "none",
             cursor: "pointer",
             transition: "background-color 0.3s",
-            textTransform: "uppercase",
             alignSelf: "center",
           }}
           onMouseOver={(e) =>
-            (e.currentTarget.style.backgroundColor = "#005fa3")
+            (e.currentTarget.style.backgroundColor = "#9c4a19")
           }
           onMouseOut={(e) =>
-            (e.currentTarget.style.backgroundColor = "#377eff")
+            (e.currentTarget.style.backgroundColor = "#e67528")
           }
         >
           Submit
         </button>
       </form>
 
-      {/* Thank You Modal */}
+      {/* Thank You Modal isModalOpen*/}
       {isModalOpen && (
         <div
           style={{
@@ -251,7 +250,7 @@ const Contact = ({ isMobile }: ContactProps) => {
               onClick={closeModal}
               style={{
                 marginTop: "1.5rem",
-                backgroundColor: "#377eff",
+                backgroundColor: "#e67528",
                 color: "white",
                 fontWeight: "bold",
                 fontFamily: "Roboto, sans-serif",
@@ -263,10 +262,10 @@ const Contact = ({ isMobile }: ContactProps) => {
                 transition: "background-color 0.3s",
               }}
               onMouseOver={(e) =>
-                (e.currentTarget.style.backgroundColor = "#005fa3")
+                (e.currentTarget.style.backgroundColor = "#9c4a19")
               }
               onMouseOut={(e) =>
-                (e.currentTarget.style.backgroundColor = "#377eff")
+                (e.currentTarget.style.backgroundColor = "#e67528")
               }
             >
               Close

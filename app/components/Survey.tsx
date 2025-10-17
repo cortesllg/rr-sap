@@ -56,11 +56,11 @@ const Survey = ({ isMobile }: SurveyProps) => {
         <p
           style={{
             fontSize: "16px",
-            color: "#1f2937",
+            color: "red",
             margin: 0,
           }}
         >
-          📝 <strong>Deadline:</strong> To be Announced!
+          📝 <strong>Deadline:</strong> November 8, 2025
         </p>
 
         <p
@@ -76,11 +76,13 @@ const Survey = ({ isMobile }: SurveyProps) => {
 
         {/* English Survey Button */}
         {/* English Disabled Feedback Button */}
-        <span
-          title="Survey is currently unavailable. Come back later!"
+        <a
+          href="https://www.surveymonkey.com/r/TMY9RTM"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            backgroundColor: "#cccccc",
-            color: "#666666",
+            backgroundColor: "#e67528",
+            color: "white",
             fontWeight: "bold",
             padding: "0.5rem 1.5rem",
             fontSize: "14px",
@@ -88,13 +90,17 @@ const Survey = ({ isMobile }: SurveyProps) => {
             textDecoration: "none",
             display: "inline-block",
             alignSelf: "center",
-            cursor: "not-allowed",
-            userSelect: "none",
-            transition: "none",
+            transition: "background-color 0.3s",
           }}
+          onMouseOver={(e) =>
+            (e.currentTarget.style.backgroundColor = "#9c4a19")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.style.backgroundColor = "#e67528")
+          }
         >
-          Fill Out The Survey (To be Opened Soon)
-        </span>
+          Fill Out The Feedback Form (English)
+        </a>
       </div>
 
       {/* Call to Action */}

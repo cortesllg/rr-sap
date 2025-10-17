@@ -66,15 +66,15 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
           <strong>
             Complete Our{" "}
             {/* Link to Survey TO BE UPDATED WITH THE ACTUAL SURVEY*/}
-            <span
-              title="The survey will be available soon"
+           <span
+              onClick={() => setActiveSection("Survey")}
               style={{
-                color: "gray",
+                color: "#005fa3",
                 textDecoration: "underline",
-                cursor: "not-allowed",
+                cursor: "pointer",
               }}
             >
-              Survey (To be Updated)
+              Online Survey
             </span>
           </strong>
         </li>

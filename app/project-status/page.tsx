@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 // Will be used once we have our surveys set
-// import Link from "next/link";
+import Link from "next/link";
 import "./project-status.css";
 import "../styles/secondary-base.css";
 // import Survey from "../components/Survey";
@@ -155,27 +155,34 @@ export default function ProjectStatus() {
               on the Safety Action Plan. Your input is crucial in shaping a
               safer future for everyone!
             </p>
-
-            <span
-              className="fade-in"
-              title="Survey is currently unavailable. Come back later!"
+            {/* Button to the survey form  would go below -> can be swapped with the disabled span */}
+            <Link
+              href="/get-involved?section=Survey"
               style={{
-                backgroundColor: "#cccccc",
-                color: "#666666",
+                backgroundColor: "#e67528",
+                color: "white",
                 fontWeight: "bold",
-                padding: "0.5rem 1.5rem",
-                fontSize: "14px",
+                padding: isMobile ? "0.5rem 1.2rem" : "0.6rem 1.5rem",
+                fontSize: isMobile ? "14px" : "14px",
                 borderRadius: "9999px",
+                border: "none",
+                cursor: "pointer",
+                fontFamily: "Roboto" /* Roboto for modern body text */,
+                transition: "background-color 0.3s",
                 textDecoration: "none",
                 display: "inline-block",
-                alignSelf: "center",
-                cursor: "not-allowed",
-                userSelect: "none",
-                transition: "none",
               }}
+              rel="noopener noreferrer"
+              onMouseOver={(e) =>
+                (e.currentTarget.style.backgroundColor = "#9c4a19")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.backgroundColor = "#e67528")
+              }
             >
-              Take The Survey (To be Opened Soon)
-            </span>
+              Fill out the Feedback Form
+            </Link>
+            
           </aside>
 
           {/* Center Text Section */}
@@ -258,7 +265,7 @@ export default function ProjectStatus() {
                     color: "#377eff",
                   }}
                 >
-                  Upcoming Event: To be Determined (TBD){" "}
+                  Upcoming Event:  General Member Meeting Details{" "}
                 </h3>
 
                 <h4
@@ -279,7 +286,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> TBD
+                  📅 <strong>Date:</strong> October 18th (Saturday)
                 </div>
 
                 <div
@@ -310,7 +317,7 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-                  Details for the next workshop are{" "}
+                  Details for the next General Meeting are{" "}
                   <strong>To Be Determined (TBD)</strong>. Please check back for
                   updates regarding future workshop dates and details.
                   <br />
