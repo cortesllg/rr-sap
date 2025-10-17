@@ -74,7 +74,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
                 cursor: "pointer",
               }}
             >
-              Online Survey
+              Feedback Form
             </span>
           </strong>
         </li>

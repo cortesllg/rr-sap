@@ -99,7 +99,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
             (e.currentTarget.style.backgroundColor = "#e67528")
           }
         >
-          Fill Out The Online Survey
+          Fill Out The Feedback Form
         </a>
       </div>
 
