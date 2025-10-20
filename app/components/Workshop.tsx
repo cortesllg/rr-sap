@@ -59,7 +59,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            Next General Member Meeting Details
+            Next Workshop Details
           </h2>
 
           <p
@@ -69,7 +69,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📅 <strong>Date:</strong> October 18th (Saturday)
+            📅 <strong>Date:</strong> To Be Determined (TBD)
           </p>
           <p
             style={{
@@ -99,7 +99,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
-            Details for the next General Meeting are{" "}
+            Details for the next workshop is{" "}
             <strong>To Be Determined (TBD)</strong>. Please check back for
             updates regarding future workshop dates and details.
             <br />

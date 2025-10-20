@@ -100,7 +100,7 @@ header.hero img {
 
 .cta-button:hover {
   background-color: #1c1c21; /* Green background on hover */
-  color: #6ec1e4; /* Light green color for text on hover */
+  color: #60b6e0; /* Light green color for text on hover */
 }
 
 /* Make sure the secondary text color changes on hover */
@@ -154,7 +154,7 @@ This is the structure of the footer
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  gap: 60px;
   justify-content: center;
   text-align: center;
 }

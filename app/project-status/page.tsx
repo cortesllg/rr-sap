@@ -182,7 +182,6 @@ export default function ProjectStatus() {
             >
               Fill out the Feedback Form
             </Link>
-            
           </aside>
 
           {/* Center Text Section */}
@@ -247,7 +246,7 @@ export default function ProjectStatus() {
                   borderRadius: "16px",
                   boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
                   textAlign: "center",
-                  border: "1px solid #c8e6c9",
+                  border: ".1px solid #60b6e0",
                 }}
               >
                 <div
@@ -265,7 +264,7 @@ export default function ProjectStatus() {
                     color: "#377eff",
                   }}
                 >
-                  Upcoming Event:  General Member Meeting Details{" "}
+                  Upcoming Event: To be Determined (TBD){" "}
                 </h3>
 
                 <h4
@@ -277,6 +276,114 @@ export default function ProjectStatus() {
                   }}
                 >
                   Next Workshop Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> TBD
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> TBD
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> TBD
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  Details for the next Community Workshop are{" "}
+                  <strong>To Be Determined (TBD)</strong>. Please check back for
+                  updates regarding future workshop dates and details.
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the Tribe
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the Tribe to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+              </div>
+            </div>
+
+            {/* Past Events */}
+            <div
+              className="events-grid"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "2rem",
+                marginTop: "2rem",
+                marginBottom: "2rem",
+              }}
+            >
+              {/* Past event lists - remember to space these all with a dividing line */}
+              <div
+                className="event-card fade-in"
+                style={{
+                  background: "rgba(255, 255, 255, 0.5)",
+                  padding: "2rem",
+                  borderRadius: "16px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                  border: "1px solid #60b6e0",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📅
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1.5rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Events
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past General Meeting Details
                 </h4>
 
                 <div
