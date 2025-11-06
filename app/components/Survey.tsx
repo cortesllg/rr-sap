@@ -60,7 +60,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
             margin: 0,
           }}
         >
-          📝 <strong>Deadline:</strong> November 8, 2025
+          📝 <strong>Deadline:</strong> November 15, 2025
         </p>
 
         <p
