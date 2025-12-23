@@ -6,14 +6,14 @@ const timelineEvents = [
   {
     title: "Review and Analyze Existing Conditions",
     date: "",
-    current: true,
+    completed: true,
   },
   {
     title: "Public Outreach & Engagement",
     date: "",
     current: true,
   },
-  { title: " Safety Analysis", date: "" },
+  { title: " Safety Analysis", date: "", current: true },
   {
     title: "Draft Safety Action Plan",
     date: "",

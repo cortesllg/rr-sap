@@ -227,6 +227,8 @@ export default function ProjectStatus() {
             </div>
 
             {/* Events Section */}
+            {/* Events Section */}
+            {/* Events Section */}
             <div
               className="events-grid"
               style={{
@@ -264,7 +266,7 @@ export default function ProjectStatus() {
                     color: "#377eff",
                   }}
                 >
-                  Upcoming Event: To be Determined (TBD){" "}
+                  Upcoming Event: Community Workshop (Virtual){" "}
                 </h3>
 
                 <h4
@@ -285,7 +287,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> TBD
+                  📅 <strong>Date:</strong> February 4th, 2026 (Wednesday)
                 </div>
 
                 <div
@@ -295,7 +297,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> TBD
+                  🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
                 </div>
 
                 <div
@@ -305,7 +307,20 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> TBD
+                  📍 <strong>Location:</strong> Virtual (Not In-Person)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📝{" "}
+                  <strong>
+                    Joining Details To Be Determined (TBD), come back soon!
+                  </strong>{" "}
                 </div>
 
                 <p
@@ -316,9 +331,8 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-                  Details for the next Community Workshop are{" "}
-                  <strong>To Be Determined (TBD)</strong>. Please check back for
-                  updates regarding future workshop dates and details.
+                  The <strong>Community Workshop (Virtual)</strong> begins at
+                  4:00 PM and will take place virtually (not in-person).
                   <br />
                   <br />
                   <em>Note:</em> This upcoming community event may be
@@ -334,6 +348,8 @@ export default function ProjectStatus() {
               </div>
             </div>
 
+            {/* Past Events */}
+            {/* Past Events */}
             {/* Past Events */}
             <div
               className="events-grid"

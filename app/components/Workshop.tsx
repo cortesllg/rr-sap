@@ -38,6 +38,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           marginTop: "0rem",
         }}
       >
+        {/* Workshop details individualblock */}
         <div
           style={{
             backgroundColor: "#f9fafb",
@@ -59,7 +60,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            Next Workshop Details
+            Community Workshop (Virtual)
           </h2>
 
           <p
@@ -69,7 +70,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📅 <strong>Date:</strong> To Be Determined (TBD)
+            📅 <strong>Date:</strong> February 4th, 2026 (Wednesday)
           </p>
           <p
             style={{
@@ -78,7 +79,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            🕙 <strong>Time:</strong> TBD
+            🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
           </p>
 
           <p
@@ -88,9 +89,21 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📍 <strong>Location:</strong> TBD
+            📍 <strong>Location:</strong> Virtual (Not In-Person)
           </p>
-
+          {/* Registration Link */}
+          <p
+            style={{
+              fontSize: "16px",
+              color: "#1f2937",
+              margin: 0,
+            }}
+          >
+            📝{" "}
+            <strong>
+              Joining Details To Be Determined (TBD), come back soon!
+            </strong>{" "}
+          </p>
           <p
             style={{
               fontSize: "15px",
@@ -99,9 +112,8 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
-            Details for the next workshop is{" "}
-            <strong>To Be Determined (TBD)</strong>. Please check back for
-            updates regarding future workshop dates and details.
+            The <strong>Community Workshop (Virtual)</strong> begins at 4:00 PM
+            and will take place virtually (not in-person).
             <br />
             <br />
             <em>Note:</em> This community event may be photographed and/or
