@@ -23,9 +23,8 @@ const Survey = ({ isMobile }: SurveyProps) => {
           lineHeight: "1.75",
         }}
       >
-        Help shape the future of transportation in Robinson Rancheria! Take a
-        few minutes to complete our online survey and share your experiences,
-        concerns, and ideas.
+        Your feedback will directly impact transportation planning efforts —
+        thank you for taking this opportunity to share your voice!
       </p>
 
       {/* Survey Details */}
@@ -43,9 +42,9 @@ const Survey = ({ isMobile }: SurveyProps) => {
       >
         <h2
           style={{
+            fontFamily: "Roboto, sans-serif",
             fontSize: "20px",
             fontWeight: "bold",
-            fontFamily: "Roboto, sans-serif",
             color: "#377eff",
             margin: 0,
           }}
@@ -60,7 +59,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
             margin: 0,
           }}
         >
-          📝 <strong>Deadline:</strong> February 22, 2025
+          📝 <strong>Deadline:</strong> February 22, 2026
         </p>
 
         <p
@@ -71,36 +70,55 @@ const Survey = ({ isMobile }: SurveyProps) => {
           }}
         >
           Your feedback will directly impact transportation planning efforts —
-          don&apos;t miss this opportunity to share your voice!
+          thank you for taking this opportunity to share your voice!
         </p>
 
-        {/* English Survey Button */}
-        {/* English Disabled Feedback Button */}
-        <a
-          href="https://www.surveymonkey.com/r/TMY9RTM"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           style={{
-            backgroundColor: "#e67528",
-            color: "white",
-            fontWeight: "bold",
-            padding: "0.5rem 1.5rem",
+            backgroundColor: "#fffbeb",
             fontSize: "14px",
-            borderRadius: "9999px",
-            textDecoration: "none",
-            display: "inline-block",
-            alignSelf: "center",
-            transition: "background-color 0.3s",
+            color: "#92400e",
+            fontWeight: "bold",
+            padding: "12px 20px",
+            borderRadius: "4px",
+            borderLeft: "4px solid #f59e0b",
+            textAlign: "center",
           }}
-          onMouseOver={(e) =>
-            (e.currentTarget.style.backgroundColor = "#9c4a19")
-          }
-          onMouseOut={(e) =>
-            (e.currentTarget.style.backgroundColor = "#e67528")
-          }
         >
-          Fill Out The Feedback Form
-        </a>
+          The feedback form period ended February 23, 2026
+        </div>
+
+        {/* Survey Buttons */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
+            marginTop: "1rem",
+          }}
+        >
+          {/* English Survey Button */}
+          {/* English Disabled Feedback Button */}
+          <span
+            title="Feedback form is now closed"
+            style={{
+              backgroundColor: "#cccccc",
+              color: "#666666",
+              fontWeight: "bold",
+              padding: "0.5rem 1.5rem",
+              fontSize: "14px",
+              borderRadius: "9999px",
+              textDecoration: "none",
+              display: "inline-block",
+              alignSelf: "center",
+              cursor: "not-allowed",
+              userSelect: "none",
+              transition: "none",
+            }}
+          >
+            Fill Out The Feedback Form (Closed)
+          </span>
+        </div>
       </div>
 
       {/* Call to Action */}

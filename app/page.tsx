@@ -55,37 +55,9 @@ export default function Home() {
 
           {/* Link to the survey form (IMPORTANT TO BE UDPATED WITH THE CORERCT LINK) */}
           <p className="p2 fade-up observe">
-            Get involved by sharing your input!
+            Thank you for sharing your input!
           </p>
-          {/* Button to the survey form  would go below*/}
-          <div className="fade-in" style={{ textAlign: "center" }}>
-            <Link
-              href="/get-involved?section=Survey"
-              style={{
-                backgroundColor: "#e67528",
-                color: "white",
-                fontWeight: "bold",
-                padding: isMobile ? "0.5rem 1.2rem" : "0.6rem 1.5rem",
-                fontSize: isMobile ? "14px" : "16px",
-                borderRadius: "9999px",
-                border: "none",
-                cursor: "pointer",
-                fontFamily: "Roboto", /* Roboto for modern body text */
-                transition: "background-color 0.3s",
-                textDecoration: "none",
-                display: "inline-block",
-              }}
-              rel="noopener noreferrer"
-              onMouseOver={(e) =>
-                (e.currentTarget.style.backgroundColor = "#9c4a19")
-              }
-              onMouseOut={(e) =>
-                (e.currentTarget.style.backgroundColor = "#e67528")
-              }
-            >
-              Fill out the Feedback Form
-            </Link>
-          </div>
+
         </div>
       </div>
 

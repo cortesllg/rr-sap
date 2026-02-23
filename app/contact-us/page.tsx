@@ -34,7 +34,7 @@ export default function ContactUs() {
         "service_3t5eqhp",
         "template_jfgnaed",
         form.current,
-        "SI8aWGGuqvqbjZp6x"
+        "SI8aWGGuqvqbjZp6x",
       )
       .then(
         (result) => {
@@ -45,7 +45,7 @@ export default function ContactUs() {
         (error) => {
           console.error(error.text);
           alert("Failed to send message. Please try again later.");
-        }
+        },
       );
   };
 
@@ -126,9 +126,9 @@ export default function ContactUs() {
               padding: "1rem 1rem",
               marginTop: isMobile ? "1rem" : "2rem",
               fontSize: "14px",
-              borderRadius: "16px",
               alignSelf: isMobile ? "center" : "flex-start",
               textAlign: "center",
+              borderRadius: "16px",
               width: isMobile ? "80%" : "auto",
               transform: isMobile ? "none" : "translateX(3rem)", // Adjust this to move it closer without affecting content size
               boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
@@ -136,7 +136,7 @@ export default function ContactUs() {
             }}
           >
             <h3
-              className="sidebar-title  fade-in"
+              className="sidebar-title fade-in"
               style={{
                 textDecoration: "underline",
                 textAlign: "center",
@@ -161,37 +161,29 @@ export default function ContactUs() {
               }}
             >
               Your feedback will directly impact transportation planning
-              efforts! Come back soon to take the survey and share your thoughts
-              on the Safety Action Plan. Your input is crucial in shaping a
-              safer future for everyone!
+              efforts! Thank you for taking this opportunity to share your
+              voice!
             </p>
-
-            <Link
-              href="/get-involved?section=Survey"
+            {/* Button to the survey form  would go below -> can be swapped with the disabled span */}
+            <span
               style={{
-                backgroundColor: "#e67528",
-                color: "white",
+                backgroundColor: "#cccccc",
+                color: "#666666",
                 fontWeight: "bold",
-                padding: isMobile ? "0.5rem 1.2rem" : "0.6rem 1.5rem",
-                fontSize: isMobile ? "14px" : "14px",
+                padding: "0.5rem 1.5rem",
+                fontSize: "14px",
                 borderRadius: "9999px",
                 border: "none",
-                cursor: "pointer",
-                fontFamily: "Roboto" /* Roboto for modern body text */,
+                cursor: "not-allowed",
                 transition: "background-color 0.3s",
+                textTransform: "uppercase",
                 textDecoration: "none",
                 display: "inline-block",
               }}
-              rel="noopener noreferrer"
-              onMouseOver={(e) =>
-                (e.currentTarget.style.backgroundColor = "#9c4a19")
-              }
-              onMouseOut={(e) =>
-                (e.currentTarget.style.backgroundColor = "#e67528")
-              }
+              title="Feedback form has now been closed"
             >
-              Fill out the Feedback Form
-            </Link>
+              Fill out Feedback Form (Closed)
+            </span>
           </aside>
 
           {/* Center Text Section with Send a Message Section */}

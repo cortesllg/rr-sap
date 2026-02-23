@@ -151,37 +151,29 @@ export default function ProjectStatus() {
               }}
             >
               Your feedback will directly impact transportation planning
-              efforts! Come back soon to take the survey and share your thoughts
-              on the Safety Action Plan. Your input is crucial in shaping a
-              safer future for everyone!
+              efforts! Thank you for taking this opportunity to share your
+              voice!
             </p>
             {/* Button to the survey form  would go below -> can be swapped with the disabled span */}
-            <Link
-              href="/get-involved?section=Survey"
+            <span
               style={{
-                backgroundColor: "#e67528",
-                color: "white",
+                backgroundColor: "#cccccc",
+                color: "#666666",
                 fontWeight: "bold",
-                padding: isMobile ? "0.5rem 1.2rem" : "0.6rem 1.5rem",
-                fontSize: isMobile ? "14px" : "14px",
+                padding: "0.5rem 1.5rem",
+                fontSize: "14px",
                 borderRadius: "9999px",
                 border: "none",
-                cursor: "pointer",
-                fontFamily: "Roboto" /* Roboto for modern body text */,
+                cursor: "not-allowed",
                 transition: "background-color 0.3s",
+                textTransform: "uppercase",
                 textDecoration: "none",
                 display: "inline-block",
               }}
-              rel="noopener noreferrer"
-              onMouseOver={(e) =>
-                (e.currentTarget.style.backgroundColor = "#9c4a19")
-              }
-              onMouseOut={(e) =>
-                (e.currentTarget.style.backgroundColor = "#e67528")
-              }
+              title="Feedback form has now been closed"
             >
-              Fill out the Feedback Form
-            </Link>
+              Fill out Feedback Form (Closed)
+            </span>
           </aside>
 
           {/* Center Text Section */}
@@ -334,14 +326,16 @@ export default function ProjectStatus() {
                     <strong>To Be Determined (TBD)</strong>. Please check back
                     for updates regarding future workshop dates and details.
                     <em>
-                    <br />
-                    <br />  
-                    Note:</em> This upcoming community event may be
-                    photographed and/or videotaped for possible use on the Tribe
-                    (and library) websites and social media. Your participation
-                    constitutes consent for the Tribe to publish your likeness
-                    for publicity purposes. Activities, events, and times listed
-                    above are subject to change. Please check back for updates.
+                      <br />
+                      <br />
+                      Note:
+                    </em>{" "}
+                    This upcoming community event may be photographed and/or
+                    videotaped for possible use on the Tribe (and library)
+                    websites and social media. Your participation constitutes
+                    consent for the Tribe to publish your likeness for publicity
+                    purposes. Activities, events, and times listed above are
+                    subject to change. Please check back for updates.
                   </p>
                 </div>
               </div>

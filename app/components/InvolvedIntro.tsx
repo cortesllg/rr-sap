@@ -30,7 +30,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
         travel in our community every day — and that includes you! Robinson
         Rancheria is working on the Safety Action Plan, and your input is
         critical to ensuring the plan reflects your real needs. There will be
-        four ways to get involved:
+        three ways to get involved:
       </p>
 
       {/* Steps List */}
@@ -62,22 +62,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
             </span>
           </strong>
         </li>
-        <li>
-          <strong>
-            Complete Our{" "}
-            {/* Link to Survey TO BE UPDATED WITH THE ACTUAL SURVEY*/}
-           <span
-              onClick={() => setActiveSection("Survey")}
-              style={{
-                color: "#005fa3",
-                textDecoration: "underline",
-                cursor: "pointer",
-              }}
-            >
-              Feedback Form
-            </span>
-          </strong>
-        </li>
+
         <li>
           <strong>
             Attend a{" "}

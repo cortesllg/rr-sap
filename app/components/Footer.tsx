@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
           <div>
             <h3>
-              <Link href="/get-involved?section=Survey">FEEDBACK FORM</Link>
+              <Link href="/get-involved?section=Engagement">MAP COMMENTS</Link>
             </h3>
           </div>
         </div>
