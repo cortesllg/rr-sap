@@ -28,9 +28,8 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
       >
         We believe the best ideas come from the people who live, work, and
         travel in our community every day — and that includes you! Robinson
-        Rancheria is working on the Safety Action Plan, and your input is
-        critical to ensuring the plan reflects your real needs. There will be
-        three ways to get involved:
+        Rancheria has completed the Safety Action Plan, and thanks to your input,
+        the plan has been crafted to reflect the community’s real needs. You can now read the Comprehensive Safety Action Plan.
       </p>
 
       {/* Steps List */}
@@ -49,49 +48,20 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
       >
         <li>
           <strong>
-            Visit Our{" "}
+            Read the{" "}
             <span
-              onClick={() => setActiveSection("Engagement")}
+              onClick={() => {
+                window.location.href = "/documentation";
+              }}
               style={{
                 color: "#005fa3",
                 textDecoration: "underline",
                 cursor: "pointer",
               }}
             >
-              Online Comment Map
+              Comprehensive Safety Action Plan
             </span>
-          </strong>
-        </li>
-
-        <li>
-          <strong>
-            Attend a{" "}
-            <span
-              onClick={() => setActiveSection("Workshop")}
-              style={{
-                color: "#005fa3",
-                textDecoration: "underline",
-                cursor: "pointer",
-              }}
-            >
-              Public Workshop
-            </span>
-          </strong>
-        </li>
-
-        <li>
-          <strong>
-            <span
-              onClick={() => setActiveSection("Contact")}
-              style={{
-                color: "#005fa3",
-                textDecoration: "underline",
-                cursor: "pointer",
-              }}
-            >
-              Contact Us
-            </span>{" "}
-            Directly
+              .
           </strong>
         </li>
       </ol>
@@ -110,23 +80,11 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
         }}
       >
         Your experiences are crucial to understanding what’s working — and
-        what’s not — on our streets today. Your suggestions will help us
+        what’s not — on our streets today. Your suggestions has helped us
         prioritize future improvements.
       </p>
 
-      {/* Call to Action */}
-      <p
-        style={{
-          fontSize: isMobile ? "17px" : "18px",
-          color: "#377eff",
-          fontWeight: "700",
-          textAlign: "center",
-          marginTop: "2rem",
-          maxWidth: "100%",
-        }}
-      >
-        Get involved today — we’re excited to hear from you!
-      </p>
+
     </div>
   );
 };

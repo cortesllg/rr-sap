@@ -23,7 +23,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
           lineHeight: "1.75",
         }}
       >
-        Your feedback will directly impact transportation planning efforts —
+        Your feedback has directly impact transportation planning efforts —
         thank you for taking this opportunity to share your voice!
       </p>
 

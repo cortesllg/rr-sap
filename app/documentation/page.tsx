@@ -55,7 +55,7 @@ export default function Documentation() {
           </div>
           <div className="bg-heading">DOCUMENTATION</div>
           <div className="fg-subtitle">
-            Get a more in-depth view of what is being done
+            Get a more in-depth view of what has been done
           </div>
         </div>
       </div>
@@ -191,12 +191,11 @@ export default function Documentation() {
                 lineHeight: "1.8",
                 color: "#4b5563",
                 marginBottom: "2.5rem",
-                textAlign: "justify",
+                textAlign: "center",
               }}
             >
-              We are currently preparing the Safety Action Plan. Please check in
-              back later to access the latest report and resources related to to
-              our transportation plan initiatives.
+              Below is the completed Comprehensive Safety Action Plan for
+              Robinson Rancheria.
             </div>
 
             {/* Events Section */}
@@ -235,87 +234,65 @@ export default function Documentation() {
                     color: "#377eff",
                   }}
                 >
-                  Documentation (Coming Soon)
+                  Robinson Rancheria Comprehensive Safety Action Plan (CSAP)
                 </h3>
 
                 <p
                   className="documentation-text"
                   style={{
                     fontSize: "1rem",
-                    marginBottom: "0.5rem",
+                    marginBottom: "2rem",
                     color: "#374151",
                   }}
                 >
-                  Check back in the future for more information to stay
-                  up-to-date.
+                  The Robinson Rancheria Comprehensive Safety Action Plan (CSAP)
+                  provides a framework for ensuring the safety and well-being of
+                  our community members.
                 </p>
 
                 {/* 📄 Final Report Box Inserted Here CURRENTLY NOT RENDERED ON SITE- WAS ASKED TO BE REMOVED BUT COULD BE USED IN THE FUTURE */}
-                {/* <div
+                <a
+                  href="/Robinson Rancheria Comprehensive Safety Action Plan (CSAP) (05-07-26).pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
-                    display: "flex",
+                    display: "inline-flex",
                     justifyContent: "center",
-                    marginBottom: "1.5rem",
+                    width: isMobile ? "100%" : "auto",
+                    padding: "0.9rem 1.5rem",
+                    backgroundColor: "#e67528",
+                    color: "#ffffff",
+                    textDecoration: "none",
+                    borderRadius: "8px",
+                    fontWeight: 600,
+                    fontSize: isMobile ? "14px" : "16px",
+                    textAlign: "center",
+                    transition: "all 0.3s ease",
                   }}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#9c4a19")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#e67528")
+                  }
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.75rem",
-                      padding: "1.25rem 2rem",
-                      borderRadius: "12px",
-                      backgroundColor: "#ffffff",
-                      boxShadow: "0 2px 6px rgba(0, 0, 0, 0.06)",
-                      width: "fit-content",
-                    }}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="#6b7280"
-                      style={{ width: "32px", height: "32px" }}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19.5 14.25v1.125c0 .621-.504 1.125-1.125 
-              1.125h-12.75A1.125 1.125 0 015 15.375V14.25m14.5-4.5v-1.125c0-.621-.504-1.125-1.125-1.125h-12.75A1.125 
-              1.125 0 015 8.625V9.75m14.5-4.5V4.125C19.5 3.504 18.996 3 18.375 3H5.625C5.004 3 4.5 3.504 4.5 
-              4.125V5.25"
-                      />
-                    </svg>
-                    <div style={{ textAlign: "left" }}>
-                      <div
-                        style={{
-                          fontWeight: "600",
-                          fontSize: "1rem",
-                          color: "#4b5563",
-                        }}
-                      >
-                        Final Report
-                      </div>
-                      <div
-                        style={{
-                          fontSize: "0.85rem",
-                          color: "#9ca3af",
-                        }}
-                      >
-                        Coming soon
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                  Comprehensive Safety Action Plan
+                </a>
 
                 <p
                   className="documentation-subtext"
-                  style={{ fontSize: "0.9rem", color: "#6b7280" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    color: "#6b7280",
+                    marginTop: "2rem",
+                  }}
                 >
-                  Project details and information will be documented here. Stay
-                  tuned to see what is going on in the Tribe of Robinson
-                  Rancheria!
+                  The CSAP outlines the strategies and actions we are taking to
+                  create a safer environment for all residents, visitors, and
+                  stakeholders. It includes a comprehensive analysis of current
+                  safety conditions, identifies key areas of concern, and
+                  presents a roadmap for implementing effective safety measures
+                  across our community.
                 </p>
               </div>
 

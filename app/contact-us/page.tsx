@@ -89,7 +89,8 @@ export default function ContactUs() {
           </div>
           <div className="bg-heading">GET IN TOUCH</div>
           <div className="fg-subtitle">
-            Have a question or message? Send a message to the team!
+            Thank you for reaching out about the Comprehensive Safety Action
+            Plan!
           </div>
         </div>
       </div>
@@ -160,7 +161,7 @@ export default function ContactUs() {
                 textAlign: "justify",
               }}
             >
-              Your feedback will directly impact transportation planning
+              Your feedback has directly impacted transportation planning
               efforts! Thank you for taking this opportunity to share your
               voice!
             </p>
@@ -206,11 +207,28 @@ export default function ContactUs() {
                 textAlign: "center",
               }}
             >
-              Send a Message
+              Thank you for your interest in the Comprehensive Safety Action
+              Plan!
             </div>
-
+            <div
+              className="project-overview-text fade-in"
+              style={{
+                fontSize: isMobile ? "15px" : "16px",
+                padding: isMobile ? "1rem" : "0 2rem",
+                maxWidth: "100%",
+                lineHeight: "1.8",
+                color: "#4b5563",
+                marginBottom: "2.5rem",
+                textAlign: "center",
+              }}
+            >
+              Thank you for reaching out! The online comment period has
+              officially closed. We appreciate your feedback and interest in improving
+              transportation safety in Robinson Rancheria. Your input helped us
+              build a better, safer community for everyone.
+            </div>
             {/* Contact Form */}
-            <form
+            {/* <form
               ref={form}
               onSubmit={sendEmail}
               style={{
@@ -220,7 +238,7 @@ export default function ContactUs() {
               }}
             >
               {/* Name Field */}
-              <input
+              {/* <input
                 type="text"
                 name="user_name"
                 placeholder="Your Name"
@@ -251,10 +269,10 @@ export default function ContactUs() {
                     e.currentTarget.style.transform = "scale(1)";
                   }
                 }}
-              />
+              /> */}
 
               {/* Email Field */}
-              <input
+              {/* <input
                 type="email"
                 name="user_email"
                 placeholder="Your Email"
@@ -288,7 +306,7 @@ export default function ContactUs() {
               />
 
               {/* Message Field */}
-              <textarea
+              {/* <textarea
                 name="message"
                 placeholder="Your Message or Suggestions"
                 rows={12}
@@ -320,10 +338,10 @@ export default function ContactUs() {
                     e.currentTarget.style.transform = "scale(1)";
                   }
                 }}
-              />
+              /> */}
 
               {/* Submit Button */}
-              <button
+              {/*<button
                 type="submit"
                 style={{
                   backgroundColor: "#e67528",
@@ -347,7 +365,7 @@ export default function ContactUs() {
               >
                 Submit
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </section>

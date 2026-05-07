@@ -32,21 +32,13 @@ export default function Footer() {
               <Link href="/project-status">PROJECT STATUS</Link>
             </h3>
           </div>
-          <div>
-            <h3>
-              <Link href="/contact-us">CONTACT US</Link>
-            </h3>
-          </div>
+
           <div>
             <h3>
               <Link href="/documentation">DOCUMENTATION</Link>
             </h3>
           </div>
-          <div>
-            <h3>
-              <Link href="/get-involved?section=Engagement">MAP COMMENTS</Link>
-            </h3>
-          </div>
+
         </div>
         <div className="footer-contact">
           <h3>

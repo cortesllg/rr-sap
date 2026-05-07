@@ -11,14 +11,16 @@ const timelineEvents = [
   {
     title: "Public Outreach & Engagement",
     date: "",
-    current: true,
+    completed: true,
   },
-  { title: " Safety Analysis", date: "", current: true },
+  { title: " Safety Analysis", date: "", completed: true },
   {
     title: "Draft Safety Action Plan",
     date: "",
+    completed: true,
+    current: false,
   },
-  { title: "Project Completion", date: "Spring 2026" },
+  { title: "Project Completion", date: "Spring 2026", completed: true },
 ];
 
 const Timeline = () => {
@@ -173,8 +175,8 @@ const Timeline = () => {
                     backgroundColor: isCurrent
                       ? "#377eff"
                       : isDone
-                      ? "#fff"
-                      : "#f0f0f0",
+                        ? "#fff"
+                        : "#f0f0f0",
                     border: `3px solid ${
                       isCurrent ? "#377eff" : isDone ? "#377eff" : "#bbb"
                     }`,

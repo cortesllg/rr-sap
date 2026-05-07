@@ -67,10 +67,9 @@ export default function GetInvolvedClient() {
   // This list is used to render the sidebar with clickable items
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
-    { label: "Online Comment Map", section: "Engagement" },
-    { label: "Feedback Form", section: "Survey" },
-    { label: "Public Workshops", section: "Workshop" },
-    { label: "Contact Us", section: "Contact" },
+    { label: "Feedback Form (Closed)", section: "Survey" },
+    { label: "Public Workshops (Completed)", section: "Workshop" },
+    { label: "Contact Us (Closed)", section: "Contact" },
   ];
 
   return (
@@ -99,8 +98,8 @@ export default function GetInvolvedClient() {
           </div>
           <div className="bg-heading">GET INVOLVED</div>
           <div className="fg-subtitle">
-            Learn how you can get involved with the Safety Action Plan in
-            Robinson Rancheria
+            Thank you for getting involved with the Safety Action Plan in
+            Robinson Rancheria!
           </div>
         </div>
       </div>
@@ -131,6 +130,7 @@ export default function GetInvolvedClient() {
               padding: "1rem 1rem",
               borderRadius: "16px",
               marginTop: isMobile ? "1" : "2rem",
+              marginBottom: isMobile ? "1" : "2rem",
               fontSize: "14px",
               alignSelf: isMobile ? "center" : "flex-start",
               width: isMobile ? "80%" : "auto",

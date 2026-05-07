@@ -150,9 +150,8 @@ export default function ProjectStatus() {
                 textAlign: "justify",
               }}
             >
-              Your feedback will directly impact transportation planning
-              efforts! Thank you for taking this opportunity to share your
-              voice!
+              Your feedback has directly impacted transportation planning efforts!
+              Thank you for taking this opportunity to share your voice!
             </p>
             {/* Button to the survey form  would go below -> can be swapped with the disabled span */}
             <span
@@ -213,132 +212,9 @@ export default function ProjectStatus() {
               }}
             >
               Robinson Rancheria, in collaboration with LLG Engineers, a
-              transportation consulting firm, is actively working on the Safety
-              Action Plan. We encourage everyone to share their input and help
-              shape a stronger, more effective Safety Action Plan for the Tribe.
-            </div>
-
-            {/* Events Section */}
-            {/* Events Section */}
-            {/* Events Section */}
-            <div
-              className="events-grid"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "2rem",
-                marginTop: "2rem",
-                marginBottom: "2rem",
-              }}
-            >
-              {/* Upcoming Events */}
-              {/* Events Section */}
-              <div
-                className="events-grid"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "2rem",
-                  marginTop: "2rem",
-                  marginBottom: "2rem",
-                }}
-              >
-                {/* Upcoming Events */}
-                <div
-                  className="event-card fade-in"
-                  style={{
-                    background: "rgb(0, 0, 0, 0.1)",
-                    padding: "2rem",
-                    borderRadius: "16px",
-                    boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
-                    textAlign: "center",
-                    border: ".1px solid #60b6e0",
-                  }}
-                >
-                  <div
-                    className="event-icon"
-                    style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
-                  >
-                    📅
-                  </div>
-
-                  <h3
-                    className="event-title"
-                    style={{
-                      fontSize: "1.75rem",
-                      marginBottom: "1.5rem",
-                      color: "#377eff",
-                    }}
-                  >
-                    Upcoming Event: To be Determined (TBD){" "}
-                  </h3>
-
-                  <h4
-                    style={{
-                      fontSize: "1.25rem",
-                      fontWeight: "bold",
-                      marginBottom: "1rem",
-                      color: "#1f2937",
-                    }}
-                  >
-                    Next Workshop Details
-                  </h4>
-
-                  <div
-                    style={{
-                      fontSize: "1.1rem",
-                      color: "#374151",
-                      marginBottom: "0.5rem",
-                    }}
-                  >
-                    📅 <strong>Date:</strong> TBD
-                  </div>
-
-                  <div
-                    style={{
-                      fontSize: "1.1rem",
-                      color: "#374151",
-                      marginBottom: "0.5rem",
-                    }}
-                  >
-                    🕙 <strong>Time:</strong> TBD
-                  </div>
-
-                  <div
-                    style={{
-                      fontSize: "1.1rem",
-                      color: "#374151",
-                      marginBottom: "1rem",
-                    }}
-                  >
-                    📍 <strong>Location:</strong> TBD
-                  </div>
-
-                  <p
-                    style={{
-                      fontSize: "15px",
-                      color: "#4b5563",
-                      marginTop: "1.5rem",
-                      lineHeight: "1.7",
-                    }}
-                  >
-                    Details for the next Community Workshop are{" "}
-                    <strong>To Be Determined (TBD)</strong>. Please check back
-                    for updates regarding future workshop dates and details.
-                    <em>
-                      <br />
-                      <br />
-                      Note:
-                    </em>{" "}
-                    This upcoming community event may be photographed and/or
-                    videotaped for possible use on the Tribe (and library)
-                    websites and social media. Your participation constitutes
-                    consent for the Tribe to publish your likeness for publicity
-                    purposes. Activities, events, and times listed above are
-                    subject to change. Please check back for updates.
-                  </p>
-                </div>
-              </div>
+              transportation consulting firm, completed the Safety Action Plan.
+              We encouraged everyone to share their input and help shape a
+              stronger, more effective Safety Action Plan for the Tribe.
             </div>
 
             {/* Past Events */}

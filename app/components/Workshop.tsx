@@ -23,14 +23,12 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           lineHeight: "1.75",
         }}
       >
-        We invite you to join our upcoming public workshop! Share your ideas,
-        concerns, and feedback to help improve the Safety Action Plan in
-        Robinson Rancheria. Your voice matters and we look forward to hearing
-        from you.
+        Thank you for joining our public workshops! We appreciate your participation and valuable feedback for the Safety Action Plan in
+        Robinson Rancheria. The workshops have now been completed.
       </p>
 
       {/* Workshop Details */}
-      <div
+      {/*<div
         style={{
           display: "flex",
           flexDirection: "column",
@@ -38,12 +36,17 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           marginTop: "0rem",
         }}
       >
-        {/* Workshop details block (individual) */}
-        <div
-          style={{
-            backgroundColor: "#f9fafb",
-            padding: "1.5rem",
-            borderRadius: "8px",
+        Thank you for joining our public workshops! We appreciate your participation and valuable feedback for the Safety Action Plan in
+        Robinson Rancheria. he workshops have now been completed.
+      </p>
+
+      {/* Workshop Details */}
+      {/*<div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "2rem",
+          marginTop: "0rem",
             border: "1px solid #d1d5db",
             textAlign: "center",
             display: "flex",
@@ -127,8 +130,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           marginTop: "2rem",
         }}
       >
-        Let&apos;s work together to make Robinson Rancheria safer and more
-        connected!
+        Thank you for helping us create a safer, more connected community!
       </p>
     </div>
   );
